@@ -1,0 +1,27 @@
+# --- Cốt lõi FastAPI ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# --- Tiện ích Production ---
+loguru>=0.7.2
+python-dotenv>=1.0.0
+
+# --- Cốt lõi RAG (Cho Phase 1) ---
+sentence-transformers>=2.0.0
+pyvi>=0.1.1
+neo4j>=5.0.0
+pymilvus>=2.4.0
+lightrag-hku>=0.1.2
+
+redis>=5.0.0
+PyYAML>=6.0.1
+
+# postgres and sqlalchemy
+sqlalchemy>=2.0.0
+asyncpg>=0.29.0
+alembic>=1.18.4
+
+pydantic[email]
+PyJWT>=2.9.0

@@ -1,0 +1,10 @@
+[
+    {
+        "question": "Điều kiện thành lập doanh nghiệp tư nhân là gì?",
+        "ground_truth": "Theo Luật Doanh nghiệp 2020, để thành lập doanh nghiệp tư nhân cần: chủ sở hữu là cá nhân, chỉ được thành lập một doanh nghiệp tư nhân, không được đồng thời làm chủ hộ kinh doanh hoặc thành viên hợp danh."
+    },
+    {
+        "question": "Mức xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với người điều khiển xe máy vượt đèn đỏ?",
+        "ground_truth": "Theo Nghị định 100/2019/NĐ-CP, người điều khiển xe mô tô, xe gắn máy không chấp hành hiệu lệnh của đèn tín hiệu giao thông bị phạt tiền từ 800.000 đồng đến 1.000.000 đồng."
+    }
+]

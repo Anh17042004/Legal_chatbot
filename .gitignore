@@ -1,0 +1,199 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Virtual Environments ===
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# === Poetry & Dependency Management ===
+poetry.lock
+*.lock
+
+# === Node & Frontend ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+.next/
+out/
+.nuxt/
+dist/
+.cache/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+build/
+
+# === Environment Files ===
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+config.local.ini
+config.ini
+
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.vim/
+.emacs.d/
+*.code-workspace
+
+# === OS ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# === Logs ===
+*.log
+logs/
+logs/**
+*.log.*
+
+# === Database ===
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db-journal
+
+# === Testing & Coverage ===
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# === Cache ===
+.cache/
+*.cache
+.venv.cache/
+
+# === Temporary Files ===
+*.tmp
+*.bak
+*.swp
+*.swo
+~*
+#*#
+
+# === LLM/ML Models ===
+*.model
+*.bin
+*.pth
+*.pt
+*.onnx
+models/
+checkpoints/
+weights/
+
+# === Data Files (Optional - uncomment if needed) ===
+# data/
+# *.csv
+# *.json
+# *.parquet
+
+# === IDE Python ===
+.pytype/
+.pyright/
+
+# === Docker ===
+.dockerignore
+docker-compose.override.yml
+
+# === Project-specific ===
+build_data/*.csv
+build_data/*.json
+build_data/*.parquet
+*.ipynb_checkpoints/
+.jupyter_cache/
+backend/app/evaluation/*.md
+
+# === Secrets & Credentials ===
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# === Build artifacts ===
+*.o
+*.a
+*.la
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# === Package artifacts ===
+.tox/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# === IDE specific files ===
+.jshintrc
+.jscsrc
+.eslintignore
+.prettierignore
+
+# === Misc ===
+.irb_history
+.ruby-version
+.ruby-gemset
+Gemfile.lock
