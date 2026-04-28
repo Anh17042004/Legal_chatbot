@@ -1,4 +1,5 @@
 # Legal AI Platform - Setup & Run Guide
+# HỆ THỐNG CHATBOT SỬ DỤNG LIGHTRAG
 ## 📋 Yêu cầu hệ thống
 
 ### Phần mềm bắt buộc:
