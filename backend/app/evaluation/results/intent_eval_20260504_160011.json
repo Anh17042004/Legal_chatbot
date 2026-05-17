@@ -1,0 +1,282 @@
+{
+  "evaluation_config": {
+    "llm_model": "gpt-oss:120b-cloud",
+    "llm_endpoint": "https://ollama.com",
+    "dataset": "D:\\full_chatbot_lightrag\\project_lightrag\\legal_ai_platform\\backend\\app\\evaluation\\intent_test_dataset.json",
+    "total_cases": 5,
+    "timestamp": "2026-05-04T16:00:11.542377"
+  },
+  "metrics": {
+    "overall": {
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5,
+      "avg_latency": 3.61
+    },
+    "per_intent": {
+      "greeting": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "support": 5,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "farewell": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "acknowledge": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "capability": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "legal_query": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "out_of_domain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "toxic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "unsafe": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "unclear": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "confusion": {
+      "greeting": {
+        "greeting": 4,
+        "legal_query": 1,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "farewell": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "acknowledge": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "capability": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "legal_query": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "out_of_domain": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "toxic": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "unsafe": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      },
+      "unclear": {
+        "greeting": 0,
+        "farewell": 0,
+        "acknowledge": 0,
+        "capability": 0,
+        "legal_query": 0,
+        "out_of_domain": 0,
+        "toxic": 0,
+        "unsafe": 0,
+        "unclear": 0
+      }
+    },
+    "followup": {
+      "total": 0,
+      "correct": 0,
+      "rate": 0
+    },
+    "critical": {
+      "legal_total": 0,
+      "legal_misclassed": 0,
+      "legal_misclass_rate": 0,
+      "details": []
+    },
+    "confidence": {
+      "avg_all": 0.92,
+      "avg_correct": 0.955,
+      "avg_wrong": 0.78,
+      "fallback_count": 0,
+      "fallback_rate": 0.0
+    },
+    "total_time": 19.6
+  },
+  "detailed_results": [
+    {
+      "test_number": 1,
+      "input": "xin chào",
+      "description": "Chào tiếng Việt chuẩn",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "confidence": 0.98,
+      "correct": true,
+      "has_history": false,
+      "is_followup": false,
+      "time": 1.64
+    },
+    {
+      "test_number": 2,
+      "input": "hi, mình cần tư vấn",
+      "description": "Chào tiếng Anh + ý định",
+      "expected": "greeting",
+      "predicted": "legal_query",
+      "confidence": 0.78,
+      "correct": false,
+      "has_history": false,
+      "is_followup": false,
+      "time": 5.69
+    },
+    {
+      "test_number": 3,
+      "input": "hello",
+      "description": "Chào tiếng Anh",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "confidence": 0.99,
+      "correct": true,
+      "has_history": false,
+      "is_followup": false,
+      "time": 3.53
+    },
+    {
+      "test_number": 4,
+      "input": "chào buổi sáng",
+      "description": "Chào theo thời gian",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "confidence": 0.99,
+      "correct": true,
+      "has_history": false,
+      "is_followup": false,
+      "time": 3.54
+    },
+    {
+      "test_number": 5,
+      "input": "hey, có ai ở đây không?",
+      "description": "Chào casual",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "confidence": 0.86,
+      "correct": true,
+      "has_history": false,
+      "is_followup": false,
+      "time": 3.64
+    }
+  ]
+}

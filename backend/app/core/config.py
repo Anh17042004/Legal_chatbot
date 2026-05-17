@@ -31,6 +31,13 @@ class Settings(BaseSettings):
     # EMBDDING
     EMBEDDING_NAME: str
 
+    # Rerank
+    CHOOSE_RERANK: Literal["local", "api"] = "local"
+    RERANK_MODEL: str = "BAAI/bge-reranker-v2-m3"
+    COHERE_API_KEYS: str = ""
+    COHERE_MODEL: str = "rerank-multilingual-v3.0"
+    ENABLE_RERANK: bool = False
+
     # redis
     REDIS_URI: str
     # Đọc từ file .env

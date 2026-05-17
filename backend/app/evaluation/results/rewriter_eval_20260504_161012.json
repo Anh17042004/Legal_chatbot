@@ -1,0 +1,132 @@
+{
+  "evaluation_config": {
+    "llm_model": "gpt-oss:120b-cloud",
+    "llm_endpoint": "https://ollama.com",
+    "dataset": "D:\\full_chatbot_lightrag\\project_lightrag\\legal_ai_platform\\backend\\app\\evaluation\\rewriter_test_dataset.json",
+    "total_cases": 3,
+    "timestamp": "2026-05-04T16:10:12.740129"
+  },
+  "metrics": {
+    "overall": {
+      "total": 3,
+      "successful": 3,
+      "failed": 0,
+      "avg_semantic_preservation": 9.33,
+      "avg_context_enrichment": 9.0,
+      "avg_standalone_clarity": 9.67,
+      "avg_composite": 0.937,
+      "avg_rewrite_time": 3.2
+    },
+    "per_category": {
+      "context_enrichment": {
+        "count": 1,
+        "avg_semantic": 9.0,
+        "avg_context": 8.0,
+        "avg_standalone": 9.0,
+        "avg_composite": 0.87
+      },
+      "pronoun_resolution": {
+        "count": 1,
+        "avg_semantic": 10.0,
+        "avg_context": 10.0,
+        "avg_standalone": 10.0,
+        "avg_composite": 1.0
+      },
+      "topic_continuation": {
+        "count": 1,
+        "avg_semantic": 9.0,
+        "avg_context": 9.0,
+        "avg_standalone": 10.0,
+        "avg_composite": 0.94
+      }
+    },
+    "worst_cases": [
+      {
+        "test": 2,
+        "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+        "composite": 0.87
+      },
+      {
+        "test": 3,
+        "follow_up": "Thế còn tài sản riêng thì sao?",
+        "composite": 0.94
+      },
+      {
+        "test": 1,
+        "follow_up": "Cần chuẩn bị giấy tờ gì?",
+        "composite": 1.0
+      }
+    ],
+    "best_cases": [
+      {
+        "test": 2,
+        "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+        "composite": 0.87
+      },
+      {
+        "test": 3,
+        "follow_up": "Thế còn tài sản riêng thì sao?",
+        "composite": 0.94
+      },
+      {
+        "test": 1,
+        "follow_up": "Cần chuẩn bị giấy tờ gì?",
+        "composite": 1.0
+      }
+    ],
+    "total_time": 30.1
+  },
+  "detailed_results": [
+    {
+      "test_number": 1,
+      "follow_up": "Cần chuẩn bị giấy tờ gì?",
+      "description": "Follow-up hỏi giấy tờ - cần resolve 'giấy tờ gì' về ly hôn đơn phương",
+      "category": "pronoun_resolution",
+      "rewritten": "Đối với việc nộp đơn đề nghị ly hôn đơn phương, cần chuẩn bị những giấy tờ nào?",
+      "expected": "Cần chuẩn bị giấy tờ gì khi nộp đơn ly hôn đơn phương?",
+      "scores": {
+        "semantic_preservation": 10,
+        "context_enrichment": 10,
+        "standalone_clarity": 10,
+        "composite": 1.0
+      },
+      "comment": "Giữ nguyên ý, bổ sung ngữ cảnh rõ ràng, câu tự độc lập đầy đủ.",
+      "rewrite_time": 3.06,
+      "judge_time": 3.03
+    },
+    {
+      "test_number": 2,
+      "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+      "description": "Follow-up hỏi trường hợp con lớn hơn - cần bổ sung context 'quyền nuôi con sau ly hôn'",
+      "category": "context_enrichment",
+      "rewritten": "Sau ly hôn, nếu con trên 7 tuổi, quy định về quyền nuôi con, việc xét duyệt nguyện vọng của trẻ và quyết định nơi ở của con được áp dụng như thế nào so với trẻ dưới 7 tuổi?",
+      "expected": "Quyền nuôi con sau ly hôn khi con trên 7 tuổi được quyết định khác như thế nào so với con dưới 7 tuổi?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 8,
+        "standalone_clarity": 9,
+        "composite": 0.87
+      },
+      "comment": "Giữ ý chính và mở rộng chi tiết, bổ sung đủ ngữ cảnh và câu vẫn tự đứng độc lập rõ ràng.",
+      "rewrite_time": 3.98,
+      "judge_time": 12.87
+    },
+    {
+      "test_number": 3,
+      "follow_up": "Thế còn tài sản riêng thì sao?",
+      "description": "Chuyển từ tài sản chung sang tài sản riêng - cần giữ context 'ly hôn'",
+      "category": "topic_continuation",
+      "rewritten": "Trong trường hợp ly hôn, tài sản riêng của vợ hoặc chồng sẽ được xử lý và phân chia như thế nào?",
+      "expected": "Tài sản riêng của vợ hoặc chồng được xử lý thế nào khi ly hôn?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 10,
+        "composite": 0.94
+      },
+      "comment": "Giữ nguyên ý hỏi về tài sản riêng, bổ sung đủ ngữ cảnh và câu hỏi độc lập rõ ràng.",
+      "rewrite_time": 2.56,
+      "judge_time": 3.66
+    }
+  ]
+}

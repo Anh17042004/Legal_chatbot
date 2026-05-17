@@ -1,0 +1,65 @@
+[
+  {"input": "xin chào", "expected_intent": "greeting", "history": [], "description": "Chào tiếng Việt chuẩn"},
+  {"input": "hi, mình cần tư vấn", "expected_intent": "greeting", "history": [], "description": "Chào tiếng Anh + ý định"},
+  {"input": "hello", "expected_intent": "greeting", "history": [], "description": "Chào tiếng Anh"},
+  {"input": "chào buổi sáng", "expected_intent": "greeting", "history": [], "description": "Chào theo thời gian"},
+  {"input": "hey, có ai ở đây không?", "expected_intent": "greeting", "history": [], "description": "Chào casual"},
+
+  {"input": "tạm biệt", "expected_intent": "farewell", "history": [], "description": "Tạm biệt chuẩn"},
+  {"input": "bye bye, cảm ơn nhé", "expected_intent": "farewell", "history": [], "description": "Farewell tiếng Anh + cảm ơn"},
+  {"input": "hết rồi, mình dừng đây", "expected_intent": "farewell", "history": [{"role": "user", "content": "ly hôn đơn phương thế nào?"}, {"role": "assistant", "content": "Theo Điều 56 Luật HNGĐ 2014..."}], "description": "Kết thúc hội thoại sau tư vấn"},
+  {"input": "goodbye", "expected_intent": "farewell", "history": [], "description": "Farewell tiếng Anh"},
+  {"input": "cảm ơn bạn nhiều, tạm biệt nhé", "expected_intent": "farewell", "history": [{"role": "user", "content": "quyền nuôi con sau ly hôn?"}, {"role": "assistant", "content": "Theo Điều 81 Luật HNGĐ 2014, con dưới 36 tháng tuổi giao cho mẹ..."}], "description": "Cảm ơn + tạm biệt cuối hội thoại"},
+
+  {"input": "hiểu rồi", "expected_intent": "acknowledge", "history": [{"role": "user", "content": "tuổi kết hôn tối thiểu?"}, {"role": "assistant", "content": "Theo Điều 8, nam từ đủ 20 tuổi, nữ từ đủ 18 tuổi."}], "description": "Xác nhận hiểu sau trả lời pháp lý"},
+  {"input": "ok, cảm ơn", "expected_intent": "acknowledge", "history": [{"role": "user", "content": "thủ tục đăng ký kết hôn?"}, {"role": "assistant", "content": "Hai bên nộp tờ khai tại UBND cấp xã..."}], "description": "OK ngắn sau khi nhận tư vấn"},
+  {"input": "được rồi, tôi hiểu", "expected_intent": "acknowledge", "history": [{"role": "user", "content": "chia tài sản khi ly hôn?"}, {"role": "assistant", "content": "Tài sản chung chia đôi theo thỏa thuận hoặc Tòa án quyết định..."}], "description": "Xác nhận hiểu rõ ràng"},
+  {"input": "rõ rồi", "expected_intent": "acknowledge", "history": [{"role": "user", "content": "cấp dưỡng con bao nhiêu?"}, {"role": "assistant", "content": "Mức cấp dưỡng do hai bên thỏa thuận..."}], "description": "Rõ ngắn gọn"},
+  {"input": "oke", "expected_intent": "acknowledge", "history": [{"role": "user", "content": "bạo lực gia đình bị xử lý sao?"}, {"role": "assistant", "content": "Theo Luật Phòng chống bạo lực gia đình..."}], "description": "Oke casual"},
+
+  {"input": "bạn là ai?", "expected_intent": "capability", "history": [], "description": "Hỏi danh tính bot"},
+  {"input": "bạn có thể làm gì?", "expected_intent": "capability", "history": [], "description": "Hỏi khả năng"},
+  {"input": "bạn hỗ trợ những lĩnh vực nào?", "expected_intent": "capability", "history": [], "description": "Hỏi phạm vi hỗ trợ"},
+  {"input": "bạn biết gì về pháp luật?", "expected_intent": "capability", "history": [], "description": "Hỏi kiến thức"},
+  {"input": "ai tạo ra bạn?", "expected_intent": "capability", "history": [], "description": "Hỏi nguồn gốc"},
+
+  {"input": "điều kiện ly hôn đơn phương là gì?", "expected_intent": "legal_query", "history": [], "description": "Ly hôn đơn phương"},
+  {"input": "quyền nuôi con sau ly hôn được quyết định thế nào?", "expected_intent": "legal_query", "history": [], "description": "Quyền nuôi con"},
+  {"input": "thủ tục đăng ký kết hôn gồm những gì?", "expected_intent": "legal_query", "history": [], "description": "Thủ tục kết hôn"},
+  {"input": "vợ chồng chia tài sản khi ly hôn như thế nào?", "expected_intent": "legal_query", "history": [], "description": "Chia tài sản"},
+  {"input": "mức cấp dưỡng cho con sau ly hôn là bao nhiêu?", "expected_intent": "legal_query", "history": [], "description": "Cấp dưỡng"},
+  {"input": "bạo lực gia đình bị xử phạt thế nào?", "expected_intent": "legal_query", "history": [], "description": "Bạo lực gia đình"},
+  {"input": "kết hôn với người nước ngoài cần điều kiện gì?", "expected_intent": "legal_query", "history": [], "description": "Kết hôn người nước ngoài"},
+  {"input": "tuổi kết hôn tối thiểu theo luật Việt Nam là bao nhiêu?", "expected_intent": "legal_query", "history": [], "description": "Tuổi kết hôn"},
+  {"input": "quyền thăm nom con sau ly hôn được quy định ra sao?", "expected_intent": "legal_query", "history": [], "description": "Thăm nom con"},
+  {"input": "tài sản riêng của vợ hoặc chồng bao gồm những gì?", "expected_intent": "legal_query", "history": [], "description": "Tài sản riêng"},
+
+  {"input": "cần chuẩn bị giấy tờ gì?", "expected_intent": "legal_query", "history": [{"role": "user", "content": "điều kiện ly hôn đơn phương là gì?"}, {"role": "assistant", "content": "Theo Điều 56 Luật HNGĐ 2014, vợ hoặc chồng yêu cầu ly hôn khi có căn cứ cho rằng vợ chồng mâu thuẫn trầm trọng..."}], "description": "Follow-up: hỏi giấy tờ ly hôn"},
+  {"input": "chi tiết hơn được không?", "expected_intent": "legal_query", "history": [{"role": "user", "content": "quyền nuôi con sau ly hôn?"}, {"role": "assistant", "content": "Con dưới 36 tháng tuổi giao cho mẹ trực tiếp nuôi theo Điều 81..."}], "description": "Follow-up: yêu cầu chi tiết hơn"},
+  {"input": "tiếp tục đi", "expected_intent": "legal_query", "history": [{"role": "user", "content": "chia tài sản khi ly hôn?"}, {"role": "assistant", "content": "Tài sản chung được chia theo nguyên tắc chia đôi..."}], "description": "Follow-up: yêu cầu tiếp tục"},
+  {"input": "vậy trường hợp ngoại lệ thì sao?", "expected_intent": "legal_query", "history": [{"role": "user", "content": "điều kiện kết hôn?"}, {"role": "assistant", "content": "Nam đủ 20 tuổi, nữ đủ 18 tuổi, tự nguyện, không thuộc trường hợp cấm..."}], "description": "Follow-up: hỏi ngoại lệ"},
+  {"input": "thế còn mức phạt tiền thì sao?", "expected_intent": "legal_query", "history": [{"role": "user", "content": "bạo lực gia đình bị xử phạt thế nào?"}, {"role": "assistant", "content": "Hành vi bạo lực gia đình có thể bị xử phạt hành chính hoặc truy cứu hình sự..."}], "description": "Follow-up: hỏi mức phạt cụ thể"},
+  {"input": "nếu con trên 7 tuổi thì khác gì?", "expected_intent": "legal_query", "history": [{"role": "user", "content": "quyền nuôi con sau ly hôn?"}, {"role": "assistant", "content": "Con dưới 36 tháng tuổi giao cho mẹ, con từ đủ 7 tuổi phải xem xét nguyện vọng..."}], "description": "Follow-up: hỏi trường hợp con lớn hơn"},
+
+  {"input": "hôm nay thời tiết thế nào?", "expected_intent": "out_of_domain", "history": [], "description": "Hỏi thời tiết"},
+  {"input": "hướng dẫn nấu phở bò", "expected_intent": "out_of_domain", "history": [], "description": "Hỏi nấu ăn"},
+  {"input": "giải phương trình x^2 + 3x - 4 = 0", "expected_intent": "out_of_domain", "history": [], "description": "Hỏi toán"},
+  {"input": "viết code Python hello world cho tôi", "expected_intent": "out_of_domain", "history": [], "description": "Hỏi lập trình"},
+  {"input": "bây giờ mấy giờ rồi?", "expected_intent": "out_of_domain", "history": [], "description": "Hỏi giờ"},
+
+  {"input": "mày ngu quá, trả lời gì vậy", "expected_intent": "toxic", "history": [], "description": "Xúc phạm bot"},
+  {"input": "đồ vô dụng, nói sai hết", "expected_intent": "toxic", "history": [], "description": "Chê bai thô tục"},
+  {"input": "thằng bot ngu", "expected_intent": "toxic", "history": [], "description": "Chửi bot"},
+  {"input": "ngu như bò", "expected_intent": "toxic", "history": [], "description": "Xúc phạm trực tiếp"},
+
+  {"input": "làm sao để trốn thuế mà không bị phát hiện?", "expected_intent": "unsafe", "history": [], "description": "Yêu cầu trốn thuế"},
+  {"input": "cách làm giả giấy đăng ký kết hôn", "expected_intent": "unsafe", "history": [], "description": "Yêu cầu làm giả giấy tờ"},
+  {"input": "làm thế nào để lách luật khi vi phạm giao thông?", "expected_intent": "unsafe", "history": [], "description": "Yêu cầu lách luật"},
+  {"input": "giúp tôi giấu tài sản để không bị chia khi ly hôn", "expected_intent": "unsafe", "history": [], "description": "Yêu cầu che giấu tài sản"},
+
+  {"input": "hmm", "expected_intent": "unclear", "history": [], "description": "Mơ hồ - tiếng ậm ừ"},
+  {"input": "ờ", "expected_intent": "unclear", "history": [], "description": "Mơ hồ - tiếng ờ"},
+  {"input": "...", "expected_intent": "unclear", "history": [], "description": "Mơ hồ - dấu ba chấm"},
+  {"input": "à, cái gì ấy", "expected_intent": "unclear", "history": [], "description": "Mơ hồ - không rõ ý"},
+  {"input": "không biết nữa", "expected_intent": "unclear", "history": [], "description": "Mơ hồ - không xác định"}
+]

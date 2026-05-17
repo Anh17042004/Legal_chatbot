@@ -1,0 +1,6 @@
+﻿test_number,input,description,expected,predicted,confidence,correct,has_history,is_followup,time
+1,xin chào,Chào tiếng Việt chuẩn,greeting,greeting,0.98,True,False,False,1.64
+2,"hi, mình cần tư vấn",Chào tiếng Anh + ý định,greeting,legal_query,0.78,False,False,False,5.69
+3,hello,Chào tiếng Anh,greeting,greeting,0.99,True,False,False,3.53
+4,chào buổi sáng,Chào theo thời gian,greeting,greeting,0.99,True,False,False,3.54
+5,"hey, có ai ở đây không?",Chào casual,greeting,greeting,0.86,True,False,False,3.64

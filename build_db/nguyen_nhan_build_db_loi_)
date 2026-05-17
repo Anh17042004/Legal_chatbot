@@ -1,0 +1,187 @@
+# Phân Tích Vấn Đề Neo4j trong LightRAG
+
+## Tóm Tắt 3 Vấn Đề
+
+Sau khi đọc xong toàn bộ source code LightRAG (`lightrag/kg/neo4j_impl.py`, `lightrag/prompt.py`, `lightrag/lightrag.py`, `lightrag/constants.py`) và file `build_database.ipynb`, đây là giải thích chi tiết cho 3 vấn đề bạn gặp:
+
+---
+
+## 1. 🏷️ Tại sao tất cả Node đều có label là `base` (cùng 1 màu)?
+
+### Nguyên nhân gốc
+
+Trong [neo4j_impl.py#L93-L105](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/kg/neo4j_impl.py#L93-L105):
+
+```python
+def _get_workspace_label(self) -> str:
+    workspace = self.workspace.strip()
+    if not workspace:
+        return "base"       # <--- ĐÂY LÀ NGUYÊN NHÂN!
+    return workspace.replace("`", "``")
+```
+
+Khi bạn tạo node, LightRAG dùng **workspace** làm **Neo4j Label** duy nhất cho TẤT CẢ các node:
+
+```cypher
+MERGE (n:`base` {entity_id: $entity_id})
+SET n += $properties
+```
+
+### Tại sao workspace = "" → label = "base"?
+
+Trong `build_database.ipynb`, bạn khởi tạo `LightRAG` mà **KHÔNG truyền tham số `workspace`**:
+
+```python
+rag = LightRAG(
+    working_dir=WORKING_DIR,
+    llm_model_max_async=1,
+    vector_storage="MilvusVectorDBStorage",
+    graph_storage="Neo4JStorage",
+    # ← KHÔNG CÓ workspace="..."
+    ...
+)
+```
+
+Mặc định trong [lightrag.py#L237](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/lightrag.py#L237):
+
+```python
+workspace: str = field(default_factory=lambda: os.getenv("WORKSPACE", ""))
+```
+
+→ `workspace = ""` → `_get_workspace_label()` trả về `"base"` → **Mọi node đều có label `base`** → Neo4j hiển thị cùng 1 màu.
+
+### Thiết kế của LightRAG
+
+> [!IMPORTANT]
+> Đây là **thiết kế có chủ đích** của LightRAG, KHÔNG phải bug. LightRAG sử dụng **1 label duy nhất** (workspace name) cho mọi entity node. Nó KHÔNG tạo label riêng cho từng `entity_type` (concept, person, organization...). Thay vào đó, `entity_type` chỉ được lưu dưới dạng **property** của node (`entity_type: "concept"`), không phải label.
+
+Lý do: LightRAG dùng label để **phân tách workspace/tenant**, không phải để phân loại entity.
+
+---
+
+## 2. 🔗 Tại sao Relationship chỉ có type là `DIRECTED`?
+
+### Nguyên nhân gốc
+
+Trong [neo4j_impl.py#L1175](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/kg/neo4j_impl.py#L1175) và [#L1227](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/kg/neo4j_impl.py#L1227):
+
+```cypher
+MERGE (source)-[r:DIRECTED]-(target)
+SET r += row.props
+```
+
+Mọi relationship đều được tạo với **relationship type cố định** là `DIRECTED`. Đây cũng là **thiết kế có chủ đích** của LightRAG — nó áp dụng cho tất cả các storage backend:
+
+| Backend | Relationship Type |
+|---------|------------------|
+| Neo4j | `DIRECTED` |
+| PostgreSQL/AGE | `DIRECTED` |
+| NetworkX | `type="DIRECTED"` |
+| Memgraph | `DIRECTED` |
+
+### Tại sao LightRAG không dùng relationship type ngữ nghĩa?
+
+> [!NOTE]
+> LightRAG lưu **ngữ nghĩa** (keywords, description) của mối quan hệ vào **properties** của relationship, không phải vào relationship type. Ví dụ:
+> - `keywords: "circumstance, division factor"` — đây chính là "loại" mối quan hệ thực sự
+> - `description: "Hoàn Cảnh Gia Đình is a factor considered by Tòa Án..."` — mô tả chi tiết
+
+Thiết kế này cho phép LightRAG truy vấn linh hoạt hơn thông qua properties thay vì bị ràng buộc bởi Neo4j relationship type (vốn phải là uppercase, không dấu, không khoảng trắng).
+
+---
+
+## 3. 🌐 Tại sao `description` bị nửa tiếng Anh nửa tiếng Việt?
+
+### Ví dụ bạn gặp:
+```
+"Tài Sản Chung denotes the joint assets of the spouses that are subject to division upon divorce."
+```
+
+```
+"Hoàn Cảnh Gia Đình is a factor considered by Tòa Án when dividing Tài Sản Chung."
+```
+
+### Nguyên nhân gốc
+
+Trong `build_database.ipynb`, bạn KHÔNG set `language` khi khởi tạo LightRAG:
+
+```python
+rag = LightRAG(
+    working_dir=WORKING_DIR,
+    # ← KHÔNG CÓ addon_params={"language": "Vietnamese"}
+    ...
+)
+```
+
+Mặc định trong [constants.py#L14](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/constants.py#L14):
+
+```python
+DEFAULT_SUMMARY_LANGUAGE = "English"  # Default language for document processing
+```
+
+Và trong [lightrag.py#L506-L513](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/lightrag.py#L506-L513):
+
+```python
+addon_params: dict[str, Any] = field(
+    default_factory=lambda: {
+        "language": get_env_value("SUMMARY_LANGUAGE", DEFAULT_SUMMARY_LANGUAGE, str),
+        ...
+    }
+)
+```
+
+→ **Language mặc định = "English"**
+
+Khi LLM extract entities, prompt yêu cầu trong [prompt.py#L54](file:///D:/full_chatbot_lightrag/LightRAG/lightrag/prompt.py#L54):
+
+```
+7. Language & Proper Nouns:
+   - The entire output (entity names, keywords, and descriptions) must be written in `{language}`.
+   - Proper nouns (e.g., personal names, place names, organization names) should be retained 
+     in their original language if a proper, widely accepted translation is not available.
+```
+
+### Kết quả
+
+Vì `language = "English"`:
+- LLM **viết description bằng tiếng Anh** ("denotes the joint assets...")
+- Nhưng **giữ nguyên proper nouns/terms tiếng Việt** ("Tài Sản Chung", "Hoàn Cảnh Gia Đình", "Tòa Án")
+
+→ Description bị **nửa Anh nửa Việt** là do LLM tuân thủ prompt: viết tiếng Anh nhưng giữ nguyên thuật ngữ pháp lý tiếng Việt.
+
+---
+
+## 🔧 Cách Fix
+
+### Fix 1: Node label `base` → tên workspace có ý nghĩa
+```python
+rag = LightRAG(
+    working_dir=WORKING_DIR,
+    workspace="legal_vn",  # ← Thêm dòng này
+    ...
+)
+```
+> Lưu ý: Điều này chỉ đổi label thành `legal_vn` nhưng vẫn **1 label cho mọi node**. Nếu muốn node có nhiều label theo `entity_type`, phải sửa source code `neo4j_impl.py`.
+
+### Fix 2: Description hoàn toàn tiếng Việt
+```python
+rag = LightRAG(
+    working_dir=WORKING_DIR,
+    addon_params={
+        "language": "Vietnamese",  # ← Thêm dòng này
+        "entity_types": ["person", "organization", "concept", "location", "event", "law", "regulation"],
+    },
+    ...
+)
+```
+Hoặc set biến môi trường:
+```bash
+export SUMMARY_LANGUAGE=Vietnamese
+```
+
+### Fix 3: Relationship type phong phú hơn
+
+> [!WARNING]
+> Đây là thay đổi kiến trúc cốt lõi của LightRAG. Relationship type `DIRECTED` là **hard-coded** trong toàn bộ hệ thống (Neo4j, PostgreSQL, NetworkX, Memgraph). Việc sửa đổi sẽ ảnh hưởng đến tất cả các truy vấn Cypher. **Không khuyến khích** trừ khi bạn fork riêng.
+
+Nếu muốn visualization đẹp hơn trên Neo4j Browser, bạn có thể viết script post-processing để thêm label cho nodes dựa trên `entity_type` property, hoặc dùng Neo4j Bloom/GraphXR để color-code theo property thay vì label.

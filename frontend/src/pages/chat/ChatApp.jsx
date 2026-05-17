@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { useAuth } from '../../contexts/AuthContext';
 import { chatApi } from '../../api/chatApi';
 import { apiStream } from '../../api/client';
+import ThemeToggle from '../../components/ThemeToggle';
 import './ChatApp.css';
 
 const SIDEBAR_MIN = 240;
@@ -25,6 +26,7 @@ export default function ChatApp() {
   const messagesEndRef = useRef(null);
   const dragRef = useRef(null);
   const currentSessionIdRef = useRef(null);
+  const isStreamingRef = useRef(false);
 
   const quickPrompts = [
     'Điều kiện ly hôn đơn phương là gì?',
@@ -41,22 +43,29 @@ export default function ChatApp() {
   }, [currentSessionId]);
 
   useEffect(() => {
+    isStreamingRef.current = isStreaming;
+  }, [isStreaming]);
+
+  useEffect(() => {
     loadSessions();
 
     const handleVisibilityOrFocus = () => {
-      if (!document.hidden) {
+      // Don't reload sessions while streaming to avoid resetting optimistic messages
+      if (!document.hidden && !isStreamingRef.current) {
         loadSessions();
       }
     };
 
     const handleStorageSync = (event) => {
-      if (event.key === 'auditLogsUpdatedAt') {
+      if (event.key === 'auditLogsUpdatedAt' && !isStreamingRef.current) {
         loadSessions();
       }
     };
 
     const handleAuditUpdated = () => {
-      loadSessions();
+      if (!isStreamingRef.current) {
+        loadSessions();
+      }
     };
 
     window.addEventListener('focus', handleVisibilityOrFocus);
@@ -94,8 +103,9 @@ export default function ChatApp() {
       const sessionList = res.data || [];
       setSessions(sessionList);
 
+      // Only reset current session if truly deleted, and not while streaming
       const activeSessionId = currentSessionIdRef.current;
-      if (activeSessionId && !sessionList.some((s) => s.session_id === activeSessionId)) {
+      if (!isStreamingRef.current && activeSessionId && !sessionList.some((s) => s.session_id === activeSessionId)) {
         setCurrentSessionId(null);
         setMessages([]);
       }
@@ -354,6 +364,9 @@ export default function ChatApp() {
             </h1>
           </div>
 
+          <div className="chat-mode-select">
+            <ThemeToggle />
+          </div>
           <div className="chat-mode-select">
             <label>Chế độ truy vấn</label>
             <select value={mode} onChange={(e) => setMode(e.target.value)}>

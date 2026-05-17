@@ -88,6 +88,8 @@
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 .admin-header h1 {
   font-size: 20px;
@@ -219,4 +221,88 @@
 
 .selected-row {
   background: rgba(88, 166, 255, 0.1) !important;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] .admin-layout {
+  background: #f4f6f9;
+}
+[data-theme="light"] .admin-sidebar {
+  background: #ffffff;
+  border-right-color: #d0d7de;
+}
+[data-theme="light"] .admin-brand {
+  border-bottom-color: #d0d7de;
+}
+[data-theme="light"] .admin-brand h2 {
+  color: #1a202c;
+}
+[data-theme="light"] .badge {
+  background: #f0f2f5;
+  color: #4a5568;
+}
+[data-theme="light"] .admin-nav-item {
+  color: #4a5568;
+}
+[data-theme="light"] .admin-nav-item:hover {
+  background: #e8ecf0;
+  color: #1a202c;
+}
+[data-theme="light"] .admin-nav-item.active {
+  background: #059669;
+  color: #fff;
+}
+[data-theme="light"] .admin-footer {
+  border-top-color: #d0d7de;
+}
+[data-theme="light"] .admin-user-info strong {
+  color: #1a202c;
+}
+[data-theme="light"] .admin-header {
+  border-bottom-color: #d0d7de;
+}
+[data-theme="light"] .admin-header h1 {
+  color: #1a202c;
+}
+[data-theme="light"] .stat-card {
+  background: #ffffff;
+  border-color: #d0d7de;
+}
+[data-theme="light"] .stat-title {
+  color: #4a5568;
+}
+[data-theme="light"] .stat-value {
+  color: #1a202c;
+}
+[data-theme="light"] .table-responsive {
+  background: #ffffff;
+  border-color: #d0d7de;
+}
+[data-theme="light"] .admin-table th {
+  background: #f0f2f5;
+  color: #4a5568;
+}
+[data-theme="light"] .admin-table th,
+[data-theme="light"] .admin-table td {
+  border-bottom-color: #d0d7de;
+  color: #1a202c;
+}
+[data-theme="light"] .admin-table tbody tr:hover {
+  background: #f0f2f5;
+}
+[data-theme="light"] .code-box {
+  background: #f7f8fa;
+  border-color: #d0d7de;
+}
+[data-theme="light"] .role-select {
+  background: #ffffff;
+  color: #1a202c;
+  border-color: #d0d7de;
+}
+[data-theme="light"] .expanded-row {
+  background: #f0f2f5 !important;
+}
+
+.admin-theme-toggle {
+  margin-left: auto;
 }

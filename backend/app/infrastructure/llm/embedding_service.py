@@ -1,9 +1,13 @@
 import asyncio
+import os
 import numpy as np
 from pyvi import ViTokenizer
 from sentence_transformers import SentenceTransformer
 from app.core.logger import logger
 from app.core.config import settings
+
+# # Fix tokenizer deadlock when running concurrently (especially with RAGAS)
+# os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 class EmbeddingService:

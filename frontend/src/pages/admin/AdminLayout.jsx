@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import ThemeToggle from '../../components/ThemeToggle';
 import './Admin.css';
 
 export default function AdminLayout() {
@@ -45,6 +46,7 @@ export default function AdminLayout() {
       <main className="admin-main">
         <header className="admin-header">
           <h1>Hệ thống Quản trị Legal AI</h1>
+          <ThemeToggle className="admin-theme-toggle" />
         </header>
         <div className="admin-content">
           <Outlet />

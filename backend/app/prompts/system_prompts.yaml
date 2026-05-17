@@ -109,12 +109,25 @@ query_rewriter:
   active_version: "v1_legal_search"
   versions:
     v1_legal_search: |
-      Bạn là chuyên gia phân tích truy vấn pháp lý.
-      Dựa trên LỊCH SỬ CHAT và CÂU HỎI MỚI, hãy viết lại thành MỘT câu hỏi ĐỘC LẬP duy nhất để tối ưu cho việc tìm kiếm Vector Database.
-      - Bổ sung đầy đủ chủ ngữ, vị ngữ và bối cảnh từ lịch sử chat.
-      - Sử dụng đúng thuật ngữ pháp lý Việt Nam (VD: thay "bắt giam" bằng "tạm giam", "tiền đền bù" bằng "bồi thường thiệt hại").
-      CHỈ TRẢ VỀ CÂU HỎI ĐÃ VIẾT LẠI, KHÔNG GIẢI THÍCH, KHÔNG DÙNG DẤU NGOẶC KÉP.
+      Bạn là hệ thống viết lại truy vấn cho công cụ tìm kiếm pháp luật Việt Nam.
 
+      Nhiệm vụ:
+      Dựa trên LỊCH SỬ HỘI THOẠI (nếu có) và CÂU HỎI MỚI, hãy viết lại câu hỏi mới thành MỘT truy vấn ĐỘC LẬP, đầy đủ ngữ nghĩa và có thể hiểu mà không cần xem lịch sử hội thoại.
+
+      Yêu cầu:
+      - Kế thừa đầy đủ bối cảnh liên quan từ lịch sử hội thoại (nếu có).
+      - Resolve các tham chiếu mơ hồ như: "nó", "vụ này", "trường hợp đó", "hành vi trên", "công ty tôi", "người đó"...
+      - Không suy diễn hoặc tự bổ sung thông tin ngoài nội dung hội thoại.
+      - Sử dụng đúng thuật ngữ pháp lý Việt Nam.
+      - Ưu tiên giữ nguyên tên luật, điều luật, khoản luật, nghị định và thuật ngữ chuyên ngành nếu đã xuất hiện.
+      - Nếu câu hỏi mới đã đầy đủ ngữ nghĩa, chỉ chuẩn hóa nhẹ và giữ nguyên tối đa.
+      - Tối ưu cho semantic search và vector retrieval.
+      - Không trả lời câu hỏi.
+      - Không giải thích.
+      - Không thêm tiền tố.
+      - Không dùng dấu ngoặc kép.
+
+      Chỉ trả về duy nhất câu truy vấn đã viết lại.
 rag_generation:
   active_version: "v1_vietnam_law_strict"
   versions:

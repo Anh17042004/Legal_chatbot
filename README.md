@@ -1,10 +1,17 @@
-# Legal AI Platform - Setup & Run Guide
-# HỆ THỐNG CHATBOT SỬ DỤNG LIGHTRAG
-## 📋 Yêu cầu hệ thống
+# LightRAG Vietnamese Legal AI Platform
 
-### Phần mềm bắt buộc:
+**Vietnamese legal AI chatbot** leveraging LightRAG architecture. Integrates legal document crawling/processing → Milvus vector DB + fine-tuned Vietnamese embedding model → Neo4j knowledge graph (LLM-extracted legal entities) → FastAPI async backend with real-time SSE streaming. 9-intent classifier routes queries with context-aware session management & audit logging.
+
+**Tech Stack:** LightRAG, Milvus, Neo4j, FastAPI, React 18, PostgreSQL, Redis, Ollama
+
+---
+
+# Setup & Run Guide
+
+## 📋 Requirements
+
 - **Python 3.10+**
-- **Node.js 16+** & **npm/yarn**
+- **Node.js 16+** & **npm**
 - **PostgreSQL 13+**
 - **Redis 6+**
 - **Ollama** (hoặc LLM service khác)

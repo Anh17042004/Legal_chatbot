@@ -1,0 +1,343 @@
+{
+  "evaluation_config": {
+    "llm_model": "gpt-oss:120b-cloud",
+    "llm_endpoint": "https://ollama.com",
+    "dataset": "D:\\full_chatbot_lightrag\\project_lightrag\\legal_ai_platform\\backend\\app\\evaluation\\rewriter_test_dataset.json",
+    "total_cases": 15,
+    "timestamp": "2026-05-04T22:54:45.168855"
+  },
+  "metrics": {
+    "overall": {
+      "total": 15,
+      "successful": 15,
+      "failed": 0,
+      "avg_semantic_preservation": 9.13,
+      "avg_context_enrichment": 9.2,
+      "avg_standalone_clarity": 9.47,
+      "avg_composite": 0.929,
+      "avg_rewrite_time": 2.83
+    },
+    "per_category": {
+      "context_enrichment": {
+        "count": 5,
+        "avg_semantic": 9.0,
+        "avg_context": 8.8,
+        "avg_standalone": 9.4,
+        "avg_composite": 0.91
+      },
+      "multi_turn": {
+        "count": 1,
+        "avg_semantic": 9.0,
+        "avg_context": 9.0,
+        "avg_standalone": 9.0,
+        "avg_composite": 0.9
+      },
+      "pronoun_resolution": {
+        "count": 6,
+        "avg_semantic": 9.17,
+        "avg_context": 9.33,
+        "avg_standalone": 9.33,
+        "avg_composite": 0.928
+      },
+      "topic_continuation": {
+        "count": 3,
+        "avg_semantic": 9.33,
+        "avg_context": 9.67,
+        "avg_standalone": 10.0,
+        "avg_composite": 0.97
+      }
+    },
+    "worst_cases": [
+      {
+        "test": 2,
+        "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+        "composite": 0.87
+      },
+      {
+        "test": 1,
+        "follow_up": "Cần chuẩn bị giấy tờ gì?",
+        "composite": 0.9
+      },
+      {
+        "test": 4,
+        "follow_up": "Mất bao lâu?",
+        "composite": 0.9
+      }
+    ],
+    "best_cases": [
+      {
+        "test": 11,
+        "follow_up": "Vi phạm thì bị sao?",
+        "composite": 0.97
+      },
+      {
+        "test": 3,
+        "follow_up": "Thế còn tài sản riêng thì sao?",
+        "composite": 1.0
+      },
+      {
+        "test": 7,
+        "follow_up": "Giấy tờ cần thiết là gì?",
+        "composite": 1.0
+      }
+    ],
+    "total_time": 102.5
+  },
+  "detailed_results": [
+    {
+      "test_number": 1,
+      "follow_up": "Cần chuẩn bị giấy tờ gì?",
+      "description": "Follow-up hỏi giấy tờ - cần resolve 'giấy tờ gì' về ly hôn đơn phương",
+      "category": "pronoun_resolution",
+      "rewritten": "Để đề nghị ly hôn đơn phương theo quy định của Điều 56 Luật Hôn nhân và gia đình 2014, cần chuẩn bị những giấy tờ nào?",
+      "expected": "Cần chuẩn bị giấy tờ gì khi nộp đơn ly hôn đơn phương?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Giữ ý hỏi giấy tờ, bổ sung điều khoản pháp luật, câu vẫn tự hiểu được.",
+      "rewrite_time": 2.82,
+      "judge_time": 4.66
+    },
+    {
+      "test_number": 2,
+      "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+      "description": "Follow-up hỏi trường hợp con lớn hơn - cần bổ sung context 'quyền nuôi con sau ly hôn'",
+      "category": "context_enrichment",
+      "rewritten": "Sau khi ly hôn, quy định về quyền nuôi con có khác gì khi con trên 7 tuổi?",
+      "expected": "Quyền nuôi con sau ly hôn khi con trên 7 tuổi được quyết định khác như thế nào so với con dưới 7 tuổi?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 8,
+        "standalone_clarity": 9,
+        "composite": 0.87
+      },
+      "comment": "Giữ nguyên ý hỏi về sự khác biệt khi con trên 7 tuổi, thêm ngữ cảnh ly hôn, câu đủ riêng để hiểu.",
+      "rewrite_time": 2.54,
+      "judge_time": 3.21
+    },
+    {
+      "test_number": 3,
+      "follow_up": "Thế còn tài sản riêng thì sao?",
+      "description": "Chuyển từ tài sản chung sang tài sản riêng - cần giữ context 'ly hôn'",
+      "category": "topic_continuation",
+      "rewritten": "Trong trường hợp ly hôn, tài sản riêng của mỗi vợ chồng được xử lý như thế nào?",
+      "expected": "Tài sản riêng của vợ hoặc chồng được xử lý thế nào khi ly hôn?",
+      "scores": {
+        "semantic_preservation": 10,
+        "context_enrichment": 10,
+        "standalone_clarity": 10,
+        "composite": 1.0
+      },
+      "comment": "Câu rewrite giữ nguyên ý, bổ sung ngữ cảnh ly hôn và rõ ràng khi đọc độc lập.",
+      "rewrite_time": 1.89,
+      "judge_time": 2.48
+    },
+    {
+      "test_number": 4,
+      "follow_up": "Mất bao lâu?",
+      "description": "Câu hỏi cực ngắn - cần resolve 'mất bao lâu' về đăng ký kết hôn",
+      "category": "pronoun_resolution",
+      "rewritten": "Thủ tục đăng ký kết hôn mất bao lâu để hoàn thành?",
+      "expected": "Thủ tục đăng ký kết hôn tại UBND cấp xã mất bao lâu để hoàn thành?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Preserves original intent, adds necessary context, and is clear as a standalone question.",
+      "rewrite_time": 2.34,
+      "judge_time": 3.16
+    },
+    {
+      "test_number": 5,
+      "follow_up": "Chi tiết hơn về mức phạt hành chính được không?",
+      "description": "Yêu cầu chi tiết hơn - cần bổ sung context 'bạo lực gia đình' + 'phạt hành chính'",
+      "category": "context_enrichment",
+      "rewritten": "Mức phạt hành chính chi tiết áp dụng cho hành vi bạo lực gia đình theo Nghị định 144/2021/NĐ‑CP là bao nhiêu?",
+      "expected": "Mức phạt hành chính cụ thể đối với hành vi bạo lực gia đình theo quy định pháp luật là bao nhiêu?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 10,
+        "composite": 0.94
+      },
+      "comment": "Giữ ý chính, bổ sung De-Nghiệp, câu độc lập rõ ràng.",
+      "rewrite_time": 2.3,
+      "judge_time": 3.44
+    },
+    {
+      "test_number": 6,
+      "follow_up": "Nếu bên kia không chịu trả thì làm sao?",
+      "description": "Resolve 'bên kia' và 'trả' về context cấp dưỡng sau ly hôn",
+      "category": "pronoun_resolution",
+      "rewritten": "Nếu bên kia không thực hiện nghĩa vụ cấp dưỡng cho con sau khi ly hôn, người yêu cầu có thể khởi kiện và yêu cầu Tòa án ra quyết định buộc thực hiện, kèm theo việc tịch thu tài sản, tài khoản ngân hàng và áp dụng biện pháp cưỡng chế để thu thập khoản cấp dưỡng.",
+      "expected": "Nếu bên có nghĩa vụ cấp dưỡng cho con sau ly hôn không chịu thực hiện nghĩa vụ cấp dưỡng thì phải làm thế nào?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Giữ ý chính, bổ sung chi tiết hợp lý và câu đủ nghĩa khi không có lịch sử.",
+      "rewrite_time": 3.55,
+      "judge_time": 3.26
+    },
+    {
+      "test_number": 7,
+      "follow_up": "Giấy tờ cần thiết là gì?",
+      "description": "Resolve 'giấy tờ' về kết hôn với người nước ngoài",
+      "category": "pronoun_resolution",
+      "rewritten": "Khi muốn kết hôn với người nước ngoài tại Việt Nam, cần chuẩn bị những giấy tờ nào theo quy định pháp luật?",
+      "expected": "Khi đăng ký kết hôn với người nước ngoài tại Việt Nam cần chuẩn bị những giấy tờ gì?",
+      "scores": {
+        "semantic_preservation": 10,
+        "context_enrichment": 10,
+        "standalone_clarity": 10,
+        "composite": 1.0
+      },
+      "comment": "Câu rewrite giữ nguyên ý hỏi giấy tờ, bổ sung đầy đủ ngữ cảnh và tự hiểu được mà không cần lịch sử.",
+      "rewrite_time": 1.98,
+      "judge_time": 3.23
+    },
+    {
+      "test_number": 8,
+      "follow_up": "Nếu bị ép thì xử lý ra sao?",
+      "description": "Bổ sung context 'ép theo đạo' + 'kết hôn' + 'xử lý pháp lý'",
+      "category": "context_enrichment",
+      "rewritten": "Nếu trong hôn nhân bị ép buộc phải theo tôn giáo của người kia, pháp luật quy định xử lý như thế nào?",
+      "expected": "Nếu bị gia đình chồng ép buộc phải theo tôn giáo của nhà chồng khi kết hôn thì pháp luật xử lý thế nào?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 10,
+        "composite": 0.94
+      },
+      "comment": "Giữ ý chính, bổ sung chi tiết phù hợp, câu độc lập và rõ ràng.",
+      "rewrite_time": 2.61,
+      "judge_time": 4.11
+    },
+    {
+      "test_number": 9,
+      "follow_up": "Tòa án can thiệp như thế nào?",
+      "description": "Tiếp tục chủ đề can thiệp Tòa án - cần giữ context thăm nom con sau ly hôn",
+      "category": "topic_continuation",
+      "rewritten": "Tòa án can thiệp như thế nào trong trường hợp chồng ngăn cản vợ thăm con sau ly hôn?",
+      "expected": "Tòa án can thiệp thế nào khi một bên bị cản trở quyền thăm nom con sau ly hôn?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 10,
+        "standalone_clarity": 10,
+        "composite": 0.97
+      },
+      "comment": "Bảo toàn ý nghĩa, bổ sung đầy đủ ngữ cảnh và câu rõ ràng khi đứng độc lập.",
+      "rewrite_time": 1.83,
+      "judge_time": 3.37
+    },
+    {
+      "test_number": 10,
+      "follow_up": "Trường hợp nào thì việc chia bị vô hiệu?",
+      "description": "Hỏi sâu về ngoại lệ - cần bổ sung context chia tài sản trong hôn nhân",
+      "category": "context_enrichment",
+      "rewritten": "Trong thời kỳ hôn nhân, việc chia tài sản chung của vợ chồng sẽ bị coi là vô hiệu trong những trường hợp nào theo quy định pháp luật?",
+      "expected": "Trường hợp nào thì việc chia tài sản chung của vợ chồng trong thời kỳ hôn nhân bị coi là vô hiệu?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Giữ nguyên ý, bổ sung ngữ cảnh đầy đủ và câu vẫn tự hiểu được.",
+      "rewrite_time": 2.38,
+      "judge_time": 3.11
+    },
+    {
+      "test_number": 11,
+      "follow_up": "Vi phạm thì bị sao?",
+      "description": "Câu cực ngắn - cần resolve 'vi phạm' về tảo hôn + thuật ngữ pháp lý",
+      "category": "pronoun_resolution",
+      "rewritten": "Nếu vi phạm quy định về độ tuổi kết hôn tối thiểu theo Điều 8 Luật Hôn nhân và gia đình 2014, người vi phạm sẽ bị áp dụng biện pháp xử phạt gì?",
+      "expected": "Nếu vi phạm quy định về tuổi kết hôn tối thiểu (tảo hôn) thì bị xử lý thế nào theo pháp luật?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 10,
+        "standalone_clarity": 10,
+        "composite": 0.97
+      },
+      "comment": "Giữ nguyên ý hỏi hình thức xử phạt, bổ sung luật liên quan, câu đủ nghĩa độc lập.",
+      "rewrite_time": 3.98,
+      "judge_time": 3.11
+    },
+    {
+      "test_number": 12,
+      "follow_up": "Thủ tục nhận con thế nào?",
+      "description": "Resolve 'nhận con' + bổ sung thuật ngữ pháp lý 'con ngoài giá thú'",
+      "category": "pronoun_resolution",
+      "rewritten": "Theo quy định pháp luật, thủ tục pháp lý để người cha nhận con sinh trước khi kết hôn và công nhận con là con chung như thế nào?",
+      "expected": "Thủ tục nhận con ngoài giá thú (con sinh ra trước khi đăng ký kết hôn) được thực hiện thế nào?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Giữ ý chính, bổ sung chi tiết ngữ cảnh và câu đủ rõ để hiểu mà không cần lịch sử.",
+      "rewrite_time": 4.27,
+      "judge_time": 3.93
+    },
+    {
+      "test_number": 13,
+      "follow_up": "Nộp ở đâu?",
+      "description": "Multi-turn: 4 messages history - cần resolve 'nộp ở đâu' về đơn ly hôn",
+      "category": "multi_turn",
+      "rewritten": "Cần nộp đơn khởi kiện cùng các giấy tờ (CMND/CCCD, sổ hộ khẩu, giấy đăng ký kết hôn, giấy khai sinh con nếu có) tại cơ quan nhà nước nào?",
+      "expected": "Đơn khởi kiện ly hôn đơn phương phải nộp ở đâu (tòa án nào có thẩm quyền giải quyết)?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Bảo lưu ý nghĩa câu hỏi, bổ sung đủ tài liệu và yêu cầu nộp tại cơ quan nhà nước, câu độc lập và rõ ràng.",
+      "rewrite_time": 3.99,
+      "judge_time": 7.42
+    },
+    {
+      "test_number": 14,
+      "follow_up": "Tôi có được chia nhiều tài sản hơn không?",
+      "description": "Bổ sung context ngoại tình + ly hôn + chia tài sản do lỗi",
+      "category": "context_enrichment",
+      "rewritten": "Trong vụ ly hôn do chồng ngoại tình, tôi có quyền yêu cầu tòa án chia tài sản chung cho mình nhiều hơn không?",
+      "expected": "Khi ly hôn do chồng ngoại tình, người vợ có được chia phần tài sản chung nhiều hơn so với người chồng có lỗi không?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 9,
+        "composite": 0.9
+      },
+      "comment": "Giữ ý chính, bổ sung ngữ cảnh cần thiết và câu tự đứng đủ rõ.",
+      "rewrite_time": 3.42,
+      "judge_time": 3.41
+    },
+    {
+      "test_number": 15,
+      "follow_up": "Hạn chế thăm nom trong trường hợp nào?",
+      "description": "Đào sâu vào chi tiết hạn chế - giữ context thăm nom con",
+      "category": "topic_continuation",
+      "rewritten": "Trong trường hợp nào tòa án có thể hạn chế quyền thăm nom của cha mẹ không trực tiếp nuôi con sau khi ly hôn?",
+      "expected": "Tòa án hạn chế quyền thăm nom con sau ly hôn trong trường hợp nào?",
+      "scores": {
+        "semantic_preservation": 9,
+        "context_enrichment": 9,
+        "standalone_clarity": 10,
+        "composite": 0.94
+      },
+      "comment": "Giữ ý chính, bổ sung ngữ cảnh về tòa án và cha mẹ không trực tiếp nuôi, câu rõ ràng khi độc lập.",
+      "rewrite_time": 2.58,
+      "judge_time": 3.44
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+[
+    {
+        "question": "Cho tôi hỏi là ngoại tình mà không có con chung thì có bị phạt không? Ngoại tình với người đã có gia đình, bị xử phạt như thế nào?",
+        "ground_truth": "Theo điểm c khoản 2 Điều 5 Luật Hôn nhân và Gia đình năm 2014 Việc ngoại tình ở đây không cần đặt ra hậu quả là có con chung hay không mà chỉ cần khi có hành vi chung sống với một người khác, việc chung sống này thường xuyên qua lại ăn ở với nhau như một gia đình đã là hành vi vi phạm pháp luật. Vậy hành vi ngoại tình không có con chung thì vẫn sẽ bị xử phạt. Tùy mức độ vi phạm và hậu quả để lại của hành vi ngoại tình người vi phạm sẽ bị xử lý hình sự là sẽ bị phạt tù từ 3 tháng đến 3 năm."
+    },
+    {
+        "question": "Người khuyết tật sau khi ly hôn có được trực tiếp nuôi con không? Mức xử phạt cá nhân, tổ chức cản trở quyền nuôi dưỡng con của người khuyết tật là bao nhiêu?",
+        "ground_truth": "Theo Điều 81 Luật Hôn nhân và gia đình 2014 Theo quy định, trong trường hợp vợ, chồng không thỏa thuận được về người trực tiếp nuôi con thì Tòa án sẽ dựa vào các điều kiện của các bên, xem xét xem bên nào có thể đảm bảo cho con một cuộc sống đầy đủ điều kiện về vật chất, giáo dục và tình yêu thương hơn để quyết định người trực tiếp nuôi con. Như vậy, người khuyết tật vẫn có quyền nuôi dưỡng con sau khi ly hôn và sẽ do Tòa án xem xét, quyết định người có quyền nuôi dưỡng con. Đối với hành cản trở người khuyết tật nuôi dưỡng con có thể sẽ bị phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng."
+    },
+    {
+        "question": "Năm 2020 hai vợ chồng tôi có làm đơn thuận tình ly hôn và đã nhận được quyết định công nhận thuận tình ly hôn. Tuy nhiên đến nay, chúng tôi vẫn không thống nhất được vấn đề phân chia tài sản chung. Ngoài ra trong thời kì hôn nhân chúng tôi có 1 con chung, cháu năm nay 6 tuổi. Trước đó chúng tôi thỏa thuận khi ly hôn là con sẽ do tôi nuôi, nhưng do mâu thuẫn, chồng tôi đón con về nuôi và anh không cho hai mẹ con tôi gặp nhau. Xin hỏi tôi làm đơn khởi kiện yêu cầu chia tài sản chung sau ly hôn thế nào? Chồng không cho gặp con tôi có thể khởi kiện và yêu cầu chia lại được không?",
+        "ground_truth": "Theo Điều 82 Luật Hôn nhân và gia đình 2014 Việc chồng cũ của bạn cản trở việc nuôi dưỡng con của bạn bằng cách đón con về nuôi và anh không cho hai mẹ con gặp nhau là vi phạm nghĩa vụ quy định tại Điều 82. Bạn có quyền làm đơn yêu cầu thi hành án gửi đến cơ quan thi hành án có thẩm quyền theo quy định tại Luật Thi hành án dân sự. Hoặc bạn có thể giải quyết với chồng cũ của bạn về việc này, nếu không giải quyết được, bạn có thể làm đơn khởi kiện ra tòa để yêu cầu Tòa án hạn chế quyền thăm nom con của chồng cũ bạn. Nếu bạn và chồng cũ của bạn không thống nhất được vấn đề phân chia tài sản chung sau khi ly hôn thì bạn có quyền khởi kiện ra tòa để yêu cầu tòa án chia tài sản chung của hai vợ chồng."
+    },
+    {
+        "question": "Xin hỏi, tôi có thể ly hôn mà không tiến hành thủ tục hòa giải để rút ngắn thời gian có được không?",
+        "ground_truth": "Theo Điều 52, 205 Luật Hôn nhân và gia đình năm 2014. Đối với yêu cầu thuận tình ly hôn thì bắt buộc phải tiến hành hòa giải tại Tòa án. Còn đối với yêu cầu đơn phương ly hôn thì không bắt buộc phải tiến hành hòa giải tại Tòa án. Nếu bạn muốn rút ngắn thời gian giải quyết, không muốn hòa giải thì có thể yêu cầu đơn phương ly hôn và làm đơn đề nghị không hòa giải gửi đến Tòa án."
+    },
+    {
+        "question": "Xin hỏi, Tiền trúng vé số là tài sản chung hay tài sản riêng?",
+        "ground_truth": "Theo Luật Hôn nhân và Gia đình năm 2014 Theo quy định của Luật Hôn nhân gia đình và các Nghị định hướng dẫn thi hành thì khoản tiền trúng số được xem là khoản thu nhập hợp pháp trong thời kỳ hôn nhân và là tài sản chung của vợ chồng trong thời kỳ hôn nhân."
+    },
+    {
+        "question": "Tôi có dự định kết hôn với chị A. Tuy nhiên, cán bộ hộ tịch từ chối việc đăng ký kết hôn của tôi với lý do chị A bị khuyết tật trí tuệ. Chị A đã đủ tuổi kết hôn và chỉ bị khuyết tật ở mức độ nhẹ. Vậy trong trường hợp này, tôi có được phép đăng ký kết hôn với chị A không?",
+        "ground_truth": "Theo Điều 8 Luật Hôn nhân và gia đình Pháp luật chỉ cấm kết hôn đối với những người mất năng lực hành vi dân sự. Nếu chị A bị khuyết tật trí tuệ ở mức độ nhẹ nhưng chứng minh được việc nhận thức chậm hơn người bình thường nhưng vẫn có thể tự giao tiếp như người bình thường, có thể tự nhận thức làm chủ hành vi của mình, chưa bị mất năng lực hành vi dân sự thì xác định chị A không thuộc trường hợp không đủ điều kiện kết hôn. Hai bạn vẫn thực hiện thủ tục đăng ký kết hôn như bình thường nếu những điều kiện khác các bạn đáp ứng đủ."
+    },
+    {
+        "question": "Hai vợ chồng tôi ly hôn đơn phương cách đây 2 năm, con do tôi nuôi dưỡng. Năm nay cháu 3 tuổi, cháu có được nghỉ hè nên chồng tôi muốn đón con về nội chơi 1 tuần. Nay tôi muốn đón con về thì chồng tôi không cho và thách thức nếu tôi đến đón sẽ giết con. Xin hỏi hiện nay tôi phải làm như thế nào?",
+        "ground_truth": "Theo Điều 82, 83 Luật hôn nhân và gia đình năm 2014 Với trường hợp trên, Nếu chồng bạn không được Tòa án giao cho quyền trực tiếp nuôi con khi ly hôn nhưng lại không tuân thủ các quyền, nghĩa vụ hai bên theo Luật thì bạn có thể yêu cầu phía chồng cũ thực hiện nghiêm túc các quy định của pháp luật, nếu vẫn không thiện trí thực hiện và không cho bạn đón con thì bạn liên hệ với cơ quan Công an gần nhất để lập biên bản, xử phạt hành chính."
+    },
+    {
+        "question": "Hai vợ chồng tôi kết hôn 2 năm nhưng chưa có con. Chồng tôi ngoại tình và có con riêng với bồ, nay bạn đó yêu cầu chồng tôi cấp dưỡng. Xin hỏi chồng tôi có bắt buộc phải cấp dưỡng không? Nếu không cấp dưỡng thì có chế tài xử phạt không?",
+        "ground_truth": "Theo khoản 24 Điều 3 Luật Hôn nhân và gia đình 2014 Mặc dù chồng chị và nhân tình không có quan hệ hôn nhân, nhưng chồng chị và con riêng với nhân tình vẫn có quan hệ huyết thống, nên vẫn có nghĩa vụ cấp dưỡng cho cháu bé. Nếu chồng chị không chịu thực hiện nghĩa vụ cấp dưỡng cho cháu bé thì mẹ cháu bé hoàn toàn có quyền yêu cầu toà án buộc chồng chị phải thực hiện nghĩa vụ cấp dưỡng. Nếu không chấp hành quyết định của toà sẽ bị xử lý theo quy định tại Điều 380 Bộ luật Hình sự 2015, sửa đổi bổ sung 2017."
+    },
+    {
+        "question": "Ngày 1/1/2020, tôi có mua căn hộ chung cư X và đã được cấp giấy chứng nhận. Ngày 1/5/2020, tôi có đăng ký kết hôn với chị A. Căn hộ chung cư X trên là nhà ở duy nhất mà vợ chồng tôi có. Ngày 7/10/2021, tôi tự ý bán căn hộ chung cư trên cho bà B tuy nhiên văn phòng công chứng yêu cầu phải có sự đồng ý của vợ tôi. Vậy trong trường hợp trên, tôi có thể bán căn nhà chung cư mà không cần sự đồng ý của vợ tôi không?",
+        "ground_truth": "Theo Điều 31 Luật Hôn nhân gia đình 2014 pháp luật quy định việc định đoạt tài sản là nhà ở duy nhất phải có sự nhất trí của hai vợ chồng. Tuy nhiên, đối với nhà ở là tài sản riêng thì để đảm bảo cho quyền của người chủ sở hữu thì pháp luật vẫn cho phép chủ sở hữu được quyền định đoạt tài sản của mình thông qua việc xác lập, thực hiện, chấm dứt giao dịch mà không cần phải có sự đồng ý của vợ/chồng nhưng với điều kiện là phải đảm bảo chỗ ở cho vợ/chồng."
+    },
+    {
+        "question": "Xin hỏi nếu vợ bị tâm thần thì khi bán mảnh đất thì tôi có cần chữ kí của vợ không? Thủ tục chuyển nhượng được thực hiện như thế nào?",
+        "ground_truth": "Theo Điều 53 Bộ luật Dân sự 2015 Vợ bạn bị mắc bệnh tâm thần là trường hợp được pháp luật xác định là người mất năng lực hành vi dân sự. Chính vì vậy, bạn được đại diện cho vợ bạn để tham gia các giao dịch bao gồm việc bán tài sản chung vợ chồng bạn nhằm mục đích chăm sóc, chữa bệnh, chi dùng cho những nhu cầu thiết yếu của vợ bạn. Vấn đề thủ tục chuyển nhượng bạn phải tiến hành thủ tục Công chứng, chứng thực và làm hồ sơ chuyển nhượng quyền sử dụng đất đúng theo quy định pháp luật."
+    },
+    {
+        "question": "Tôi lấy chồng cách đây 2 năm, hai vợ chồng có gom góp mua được mảnh đất. Chồng tôi chơi đánh bạc qua mạng thua hơn 300 triệu. Anh ấy mang bìa đỏ của nhà đi vay ngân hàng 120 triệu và nhờ một người khác giả làm vợ ký vay tiền. Hiện nay chồng tôi đã bỏ đi, tôi muốn ra ngân hàng chuộc lại sổ về có được không? Tôi muốn kiện chồng vì nhờ người giả chữ ký của tôi được không? Liệu chồng tôi hay người được nhờ sẽ bị xử lý? Mức xử phạt là như thế nào?",
+        "ground_truth": "Theo Luật Hôn nhân và gia đình năm 2014 Chị muốn đến ngân hàng tiến hành các thủ tục tất toán các khoản vay với ngân hàng để giải chấp đối với tài sản là quyền sử dụng đất thuộc quyền sử dụng chung của 2 vợ chồng thì chị cần phải có văn bản uỷ quyền của chồng chị. Trong trường hợp này, hai vợ chồng chị cùng đứng tên trên giấy chứng nhận quyền sử dụng đất nên việc chồng chị nhờ người khác giả mạo chữ ký của chị để thế chấp sổ đỏ vay tiền ngân hàng là hành vi vi phạm pháp luật. Do đó, giao dịch dân sự thế chấp quyền sử dụng đất để vay tiền tại ngân hàng có thể được xác định vô hiệu do vi phạm điều cấm của pháp luật. Chồng chị và người được nhờ ký giả có thể phải đối diện với trách nhiệm hình sự về hành vi lừa đảo chiếm đoạt tài sản. Mức xử phạt cao nhất của tội lừa đảo chiếm đoạt tài sản có thể lên đến 12 năm, 20 năm và tù chung thân."
+    },
+    {
+        "question": "Vợ chồng tôi mua một mảnh đất trị giá 3 tỷ, thanh toán thành 3 đợt. Sau khi thanh toán được 1/3 giá trị mảnh đất, chồng tôi qua đời. Tôi tiếp tục thanh toán 2/3 số tiền còn lại và làm thủ tục cấp Sổ đỏ đứng tên tôi. Xin hỏi sau khi chồng tôi mất, bố mẹ chồng tôi có được chia di sản thừa kế tài sản đó không?",
+        "ground_truth": "Theo 33 Luật Hôn nhân và gia đình 2014 Nếu giá trị 2/3 thửa đất trên được bạn dùng khoản tiền là tài sản chung của vợ chồng bạn để thanh toán thì nó là tài sản chung, và một nửa giá trị đó sẽ là di sản của chồng bạn để lại cho tất cả những người thuộc hàng thừa kế thứ nhất của chồng bạn trong đó có bố mẹ chồng của bạn."
+    },
+    {
+        "question": "Cho tôi hỏi tài sản chung của vợ chồng là gì?",
+        "ground_truth": "Theo khoản 1 Điều 33 Luật Hôn nhân và gia đình 2014 Tài sản chung của vợ chồng gồm tài sản do vợ, chồng tạo ra, thu nhập do lao động, hoạt động sản xuất, kinh doanh, hoa lợi, lợi tức phát sinh từ tài sản riêng và thu nhập hợp pháp khác trong thời kỳ hôn nhân, tài sản mà vợ chồng được thừa kế chung hoặc được tặng cho chung và tài sản khác mà vợ chồng thỏa thuận là tài sản chung."
+    },
+    {
+        "question": "Cho tôi hỏi tài sản chung của vợ chồng là gì?",
+        "ground_truth": "Theo Điều 27 Luật Hôn nhân gia đình năm 2014 Nếu Tòa án chưa giải quyết mà vợ chồng không đồng ý trả lại số tiền đã vay thì bạn có thể làm đơn khởi kiện yêu cầu Tòa án nhân dân nơi một trong hai người vợ hoặc chồng đang cư trú để giải quyết buộc cả hai vợ chồng phải có nghĩa vụ trả lại cho bạn số tiền đã vay theo quy định của pháp luật tố tụng dân sự."
+    },
+    {
+        "question": "Tôi và anh A có đăng ký kết hôn với nhau vào năm 2006. Năm 2008, tôi có đứng ra vay ngân hàng số tiền 1 tỷ để mua nhà, khi tôi vay tiền ngân hàng thì chồng tôi không hề biết. Hợp đồng vay tiền chỉ có mình tôi ký. Vậy căn nhà mà tôi mua có phải là tài sản riêng của tôi không ?",
+        "ground_truth": "Theo khoản 1, Điều 33 Luật Hôn nhân và Gia đình 2014. Theo quy định thì căn nhà bạn vay tiền ngân hàng mua vào năm 2008 không phải là tài sản riêng của bạn, mà là tài sản chung của vợ chồng bạn theo quy định tại khoản 1, Điều 33"
+    },
+    {
+        "question": "Hai vợ chồng tôi có đang chuẩn bị làm đơn ly hôn. Về phần tài sản, vợ tôi mua 1 căn chung cư trước thời kì hôn nhân. Tuy nhiên căn chung cư đó đóng tiền theo tiến độ , tức là trước thời kì hôn nhân, vợ tôi mới trả 50%. Sau khi kết hôn, 2 vợ chồng tôi đóng 50% số tiền còn lại. Trong giấy tờ đều đang đứng tên 2 vợ chồng. Vậy cho tôi hỏi nếu ly hôn, tài sản đó được coi là tài sản riêng hay tài sản chung? Nếu không có giấy tờ gì chứng minh vợ tôi đã bỏ ra 50% để mua tài sản trước thời kì hôn nhân thì tài sản sẽ chia như thế nào ?",
+        "ground_truth": "Theo Khoản 1 Điều 33 Luật Hôn nhân và gia đình năm 2014 Tuy nhà mua trả góp trước khi đăng ký kết hôn nhưng trả trong thời kỳ hôn nhân, được thanh toán bằng tiền lương hoặc các thu nhập khác của vợ, chồng trong thời kỳ hôn nhân thì phần giá trị nhà ở được trả góp trong thời kỳ hôn nhân là tài sản chung của vợ chồng.Mặt khác, hiện nay Giấy chứng nhận quyền sở hữu nhà đang đứng tên cả hai vợ chồng nên được coi là đã có sự chấp thuận thỏa thuận của vợ chồng về việc căn nhà đó được sáp nhập là tài sản chung của vợ chồng trong thời kỳ hôn nhân.Như vậy, có thể thấy căn nhà đang đứng tên vợ chồng bạn là tài sản chung trong thời kỳ hôn nhân nên khi ly hôn sẽ được chia theo quy định của pháp luật."
+    },
+    {
+        "question": "Anh A và Chị B kết hôn với nhau năm 2005. Anh A có tài khoản ngân hàng đứng tên anh A từ năm 2018. Anh A có rút tiền ngân hàng cho C vay việc cho C vay được lập thành văn bản nhưng chị B không biết. Trường hợp này nếu chị B yêu cầu tuyên bố giao dịch vô hiệu có được không ?Anh C có được pháp luật bảo vệ theo quy định tại Điều 133 Bộ luật Dân sự 2015 không?",
+        "ground_truth": "Theo Điều 16 Nghị định 126/2014/NĐ-CP Trong tình huống trên thì anh A giao dịch với anh C là người thứ ba ngay tình đã được chứng minh bên trên và Anh A đã đứng tên tài khoản ngân hàng năm 2008 thì theo Điều 32 anh A là người có quyền xác lập, thực hiện giao dịch liên quan đến tài khoản ngân hàng với anh C.Vậy, trong trường hợp này, chị B không có quyền yêu cầu tuyên bố giao dịch giữa anh A và anh C vô hiệu. Và anh C là người thứ ba ngay tình và sẽ được pháp luật bảo vệ theo quy định tại Bộ luật Dân sự hiện hành."
+    },
+    {
+        "question": "Tôi và chồng đã được Tòa án có thẩm quyền giải quyết ly hôn và trong bản án ly hôn tôi là người được quyền nuôi con. Mượn cớ là đưa bé đi chơi, anh ấy đã đưa con về quê ở Quảng Bình và có nói với tôi là từ giờ anh ấy sẽ nuôi con. Tôi có nói thế nào thì anh ấy cũng không chịu đưa bé về cho tôi. Vậy trường hợp này tôi phải làm gì?",
+        "ground_truth": "Theo khoản 1 Điều 81 Luật Hôn nhân và gia đình 2014 Các bên không được lạm dụng việc được Tòa án tuyên bố cho phép được nuôi con để cản trở quyền của người không được nuôi con. Ngược lại, người không được nuôi con cũng phải thực hiện đúng nghĩa vụ của mình và cũng không được phép làm trái với quyết định của Tòa án hoặc thỏa thuận tại Tòa án về việc nuôi con.Trường hợp này, người chồng tự ý về đón con đi và đòi nuôi con là trái pháp luật và có thể bị xử phạt hành chính. Mức phạt từ 100 nghìn đồng đến 300 nghìn đồng và sẽ bị buộc phải chấm dứt hành động vi phạm đó. Nếu như người chồng tự ý đón con về và có hành vi giành quyền nuôi con trái phép thì bạn có thể làm đơn đến cơ quan thi hành án đề nghị việc thi hành án theo yêu cầu, buộc người chồng phải chấp hành theo Bản án hoặc Quyết định công nhận thuận tình ly hôn giữa hai người, giao con cho bạn chăm sóc, nuôi dưỡng và buộc thực hiện nghĩa vụ cấp dưỡng."
+    },
+    {
+        "question": "Tôi đăng ký hộ khẩu thường trú tại Bắc Ninh, vợ sắp cưới của tôi có hộ khẩu tại Bắc Giang. Hiện tại chúng tôi đang công tác tại thành phố hồ chí minh và đã có sổ tạm trú KT3. Vậy chúng tôi có thể đăng ký kết hôn tại thành phố hồ chí minh không hay phải về quê đăng ký?",
+        "ground_truth": "Theo khoản 1 Điều 17 Luật Hộ tịch năm 2014 Bạn có thể đăng ký kết hôn tại nơi tạm trú.Nếu hai bạn đăng ký kết hôn tại thành phố hồ chí minh, hai bạn vẫn cần xin Giấy xác nhận tình trạng hôn nhân tại nơi đăng ký thường trú ở Bắc Ninh và Bắc Giang."
+    },
+    {
+        "question": "Tôi vừa kết hôn xong, vợ tôi trước đó đã ly hôn chồng cũ và có được quyền nuôi 01 đứa con. Xin hỏi tôi có thể nhận nuôi bé làm con nuôi được không? Nếu được thì tôi phải đáp ứng những điều kiện gì?",
+        "ground_truth": "Theo Điều 14 Luật Nuôi con nuôi 2010 Bạn có thể nhận nuôi bé khi đáp ứng những quy định tại Điều 14 Luật Nuôi con nuôi 2010. Có năng lực hành vi dân sự đầy đủ hiểu đơn giản là phải đủ 18 trở lên, không mắc bệnh hoặc nghiện các chất kích thích làm ảnh hưởng đến khả năng nhận thức, khả năng làm chủ hành vi. Có tư cách đạo đức tốt."
+    },
+    {
+        "question": "Bố chồng tôi có một thửa đất riêng đã có sổ đỏ. Bố mất không để lại di chúc, mẹ chồng tôi cũng đã mất trước đó, nhà có 3 anh chị em trong đó chồng tôi là con cả. Cho tôi hỏi, thửa đất trên nếu chồng tôi được nhận một phần thừa kế thì tôi có quyền gì không? Đó sẽ là tài sản chung hay tài sản riêng ạ?",
+        "ground_truth": "Theo Điều 32 Luật Hôn nhân và gia đình năm 2014 theo quy định, phần đất thừa kế từ bố chồng bạn được xác định là tài sản riêng của chồng bạn, bạn không có quyền gì trên diện tích đất đó, trừ trường hợp hai vợ chồng bạn có thỏa thuận khác hoặc chồng bạn đồng ý nhập số tài sản riêng đó vào khối tài sản chung vợ chồng."
+    },
+    {
+        "question": "Tôi và chồng đã được Tòa án có thẩm quyền giải quyết ly hôn và trong bản án ly hôn tôi là người được quyền nuôi con. Mượn cớ là đưa bé đi chơi, anh ấy đã đưa con về quê ở Quảng Bình và có nói với tôi là từ giờ anh ấy sẽ nuôi con. Tôi có nói thế nào thì anh ấy cũng không chịu đưa bé về cho tôi. Vậy trường hợp này tôi phải làm gì?",
+        "ground_truth": "Theo khoản 1 Điều 81 Luật Hôn nhân và gia đình 2014 Nếu như người chồng tự ý đón con về và có hành vi giành quyền nuôi con trái phép thì bạn có thể làm đơn đến cơ quan thi hành án đề nghị việc thi hành án theo yêu cầu, buộc người chồng phải chấp hành theo Bản án hoặc Quyết định công nhận thuận tình ly hôn giữa hai người, giao con cho bạn chăm sóc, nuôi dưỡng và buộc thực hiện nghĩa vụ cấp dưỡng."
+    },
+    {
+        "question": "Tôi và chồng hiện tại đang có mâu thuẫn và có ý định sẽ ly hôn. Vợ chồng tôi có 01 con chung năm nay 04 tuổi, chồng tôi là kỹ sư có thu nhập ổn định, còn tôi do sức khoẻ yếu nên không đi làm mà chỉ ở nhà bán hàng online. Vậy cho tôi hỏi, trường hợp của tôi không đi làm có dành quyền nuôi con được không?",
+        "ground_truth": "Theo Điều 81 Luật Hôn nhân và gia đình 2014 Người được trực tiếp nuôi con sẽ phải chứng minh được trước Tòa án về việc bản thân sẽ phải cung cấp được cho con môi trường thuận lợi hơn cho sự phát triển của con so với bên còn lại. Trong đó, về điều kiện vật chất cần đảm bảo thu nhập, tài sản, nơi ở ổn định. Về điều kiện tinh thần cần đảm bảo đủ thời gian để chăm sóc, nuôi dưỡng, bên con. Đồng thời người trực tiếp nuôi con phải đảm bảo về đạo đức, lối sống trong sạch, lành mạnh và tuân thủ quy định của pháp luật.Như vậy, điều kiện về kinh tế không phải là điều kiện duy nhất để Tòa xem xét ai là người trực tiếp nuôi dưỡng con sau ly hôn. Tuy nhiên cần lưu ý, người được trực tiếp nuôi con phải đảm bảo điều kiện kinh tế nhất định, dành cho con môi trường sống tốt, đảm bảo cho sự phát triển của con."
+    },
+    {
+        "question": "Cho tôi hỏi, trường hợp của tôi không có đăng ký kết hôn thì tôi có được yêu cầu chồng tôi cấp dưỡng cho con không?",
+        "ground_truth": "Theo khoản 24 Điều 3 Luật Hôn nhân và gia đình 2014 Nghĩa vụ cấp dưỡng sẽ không phụ thuộc vào việc chị và anh ấy có đăng ký kết hôn hay không, chỉ cần xác định rằng anh ấy là cha của con chị thì có thể yêu cầu anh ấy cấp dưỡng. Nếu như chị chưa có các giấy tờ xác định mối quan hệ huyết thống cha con giữa anh ấy và con chị thì trước tiên chị cần yêu cầu cơ quan nhà nước có thẩm quyền xác định quan hệ cha con giữa hai người họ. Trong trường hợp anh ấy không tự nguyện cấp dưỡng thì chị có quyền yêu cầu Tòa án buộc anh ấy phải thực hiện nghĩa vụ đó theo quy định."
+    },
+    {
+        "question": "Tôi có phát hiện được chồng tôi ngoại tình và có bằng chứng là những hình ảnh. Do anh ta rất ngoan cố nên tôi muốn tố cáo ra các cơ quan pháp luật. Vây cho tôi hỏi, trường hợp này tôi phải đến cơ quan nào để tố cáo?",
+        "ground_truth": "Theo Điều 59 Nghị định 82/2020/NĐ-CP Bạn có thể gửi đơn tố cáo chồng ngoại tình đến UBND cấp xã, Phòng tư pháp cấp huyện, Chủ tịch UBND cấp xã, Chủ tịch UBND cấp huyện, Cơ quan cảnh sát điều tra cấp có thẩm quyền,…"
+    },
+    {
+        "question": "Thời gian gần đây, vợ chồng tôi có nhiều mẫu thuẫn nhưng tôi nhất quyết không đồng ý ly hôn. Tôi được biết vợ tôi đã gửi đơn xin ly hôn lên Toà và đã có người ở Toà gọi để mời tôi lên lấy lời khai. Tôi nghĩ mâu thuẫn của vợ chồng tôi không có gì to tát nên không cần phải ra Toà. Vậy cho tôi hỏi, nếu tôi không lên Toà thì có giải quyết ly hôn được không?",
+        "ground_truth": "Khoản 1, Điều 51 Luật Hôn nhân và Gia đình Trường hợp Tòa án triệu tập hợp lệ lần thứ nhất mà bạn vắng mặt thì Tòa án sẽ hoãn phiên tòa trường hợp Tòa án triệu tập hợp lệ lần thứ hai mà bạn vắng mặt mà không phải vì sự kiện bất khả kháng hoặc trở ngại khách quan thì Tòa sẽ tiến hành xử vắng mặt bạn."
+    },
+    {
+        "question": "Vợ chồng tôi đã ly hôn được 02 năm, khi ly hôn không giải quyết về vấn đề tài sản. Hiện vợ chồng tôi có đứng tên trên 01 sổ đỏ và cùng góp vốn để cho một cửa hàng kinh doanh quần áo. Hiện tại cửa hàng làm ăn thua lỗ và vay nợ. Vậy cho tôi hỏi, chúng tôi muốn nhờ Toà án giải quyết số tài chung và nợ chung có được không?",
+        "ground_truth": "Theo Điều 33 Luật Hôn nhân và gia đình năm 2014 Trong trường hợp của bạn, bạn đã ly hôn được 2 năm và khi ly hôn không có yêu cầu tòa án giải quyết chia tài sản chung hay nợ chung của hai vợ chồng, hiện bây giờ hai vợ chồng không thỏa thuận được và có tranh chấp thì bạn có thể gửi đơn yêu cầu tòa án giải quyết chia tài sản chung của vợ chồng sau khi ly hôn, tòa án có thể xem xét giải quyết."
+    },
+    {
+        "question": "Vợ chồng tôi ly hôn đã được 03 năm, chồng tôi là người được nuôi con. Bé năm nay 06 tuổi. Thời gian gần đây, do tính chất công việc nên anh ấy không có thời gian ở nhà chăm sóc con. Thỉnh thoảng do tiếp khách nên anh còn say rượu. Đang trong tuổi ăn học nhưng bé không được giáo dục và chăm sóc đầy đủ. Cháu có nói là muốn về ở với mẹ. Vậy cho tôi hỏi, trường hợp này tôi có được yêu cầu Toà án thay đổi quyền nuôi con để đón cháu về ở với tôi không? ",
+        "ground_truth": "Theo Điều 84 Luật Hôn nhân và gia đình 2014 Trong trường hợp con dưới 7 tuổi chưa đủ tuổi để xem xét nguyện vọng của con mà người trực tiếp nuôi con không còn đủ điều kiện trực tiếp trông nom, chăm sóc, nuôi dưỡng, giáo dục con thì bạn có thể yêu cầu thay đổi người trực tiếp nuôi con bằng việc làm đơn yêu cầu Tòa án thay đổi người trực tiếp nuôi con"
+    },
+    {
+        "question": "Tôi đang muốn thay đổi giấy khai sinh của con tôi theo họ cha. Trước đó tôi và vợ tôi không làm thủ tục đăng ký kết hôn, vì vậy hiện tại tôi phải thực hiện thủ tục nhận cha cho con. Tôi được biết việc xét nghiêm ADN là bắt buộc để tôi nhận con. Vậy cho tôi hỏi, trình tự xét nghiệm ADN và việc các cơ quan chức công nhận ADN giữa cha con như thế nào là đúng luật?",
+        "ground_truth": "Theo Luật Hôn nhân và gia đình Với từng Trung tâm xét nghiệm ADN cha con sẽ có từng yêu cầu khác nhau. Kết quả của các Trung tâm xét nghiệm ADN được cấp phép hợp pháp sẽ được pháp luật công nhận và làm bằng chứng quan hệ cha con giữa bạn và con bạn."
+    },
+    {
+        "question": "Tôi và chồng cũ của tôi vừa tiến hành xong thủ tục ly hôn, tôi là người nuôi con. Anh ấy tuy có công việc ổn định nhưng lại thường xuyên uống rượu, bia, những lúc say lại kiếm chuyện để gây sự. Vì vậy, sau khi ly hôn, tôi đã yêu cầu chồng cũ chỉ được gặp con 1 tuần/1 lần để tránh ảnh hưởng đến cuộc sống và sinh hoạt của con, chồng tôi không đồng ý. Vậy cho tôi hỏi, yêu cầu đó của tôi có phù hợp với quy định của pháp luật không?",
+        "ground_truth": "Theo Điều 82 Luật Hôn nhân và gia đình năm 2014 Về việc thăm nuôi con sau khi ly hôn, khoản 3 Điều 82 Luật Luật Hôn nhân và gia đình năm 2014 đã quy định quyền của người không trực tiếp nuôi con có quyền thăm nom con mà không ai được cản trở và không hạn chế số lần thăm nom. Tuy nhiên, trong trường hợp có căn cứ cho rằng lạm dụng việc thăm nom để cản trở hoặc gây ảnh hưởng xấu đến việc trông nom, chăm sóc, nuôi dưỡng, giáo dục con thì người trực tiếp nuôi con có quyền yêu cầu Tòa án hạn chế quyền thăm nom con."
+    },
+    {
+        "question": "Tôi và chồng đã tiến hành thủ tục ly hôn và đã có Quyết định thuận tình ly hôn. Vợ chồng tôi có 01 con chung, bé năm nay 6 tuổi, toà án quyết định tôi là người nuôi con. Tôi có ý định đưa bé ra nước ngoài định cư nhưng chồng cũ của tôi không đồng ý. Vậy cho tôi hỏi, theo quy định của pháp luật thì sau khi ly hôn, tôi đưa bé ra nước ngoài định cư thì có cần sự đồng ý của người bố không?",
+        "ground_truth": "Theo Điều 81, Điều 82 của Luật Hôn nhân và Gia đình năm 2014. Việc bạn đưa con bạn ra nước ngoài định cư cùng bạn cũng phục vụ việc trông nom, chăm sóc, nuôi dưỡng con bạn là hoàn toàn hợp pháp và không ai có quyền cản trở bạn."
+    },
+    {
+        "question": "Tôi đã ly hôn tháng 10/2017 nhưng hiện tại trong sổ hộ khẩu của tôi, tôi đứng tên chủ hộ vẫn còn nguyên tên vợ cũ và có phần ghi bên dưới là đã chuyển khẩu sau ly hôn. Năm 2018 tôi kết hôn với người vợ hiện tại nhưng chúng tôi chưa làm thủ tục nhập khẩu vợ mới vào hộ khẩu của tôi. Giờ tôi muốn làm sổ hộ khẩu mới để bỏ tên vợ cũ ra khỏi sổ thì có làm được không ạ? Và nếu làm được thì thủ tục như thế nào ạ?",
+        "ground_truth": "Theo khoản 1 Điều 22 Luật Cư trú Xóa đăng ký thường trú là việc cơ quan có thẩm quyền đăng ký thường trú xóa tên người đã đăng ký thường trú trong sổ hộ khẩu và sổ đăng ký thường trú. Như vậy, để bỏ tên của vợ cũ ra khỏi sổ hộ khẩu của gia đình bạn thì cần thực hiện thủ tục xóa đăng ký thường trú theo quy định tại khoản 3 Điều 11 Thông tư 35/2014/TT-BCA ban hành ngày 9 tháng 9 năm 2014. Chiểu theo quy định trên được hiểu để xóa tên của vợ cũ trên sổ hộ khẩu của gia đình thì sau khi vợ cũ chuyển đến nơi ở mới, bạn mang hồ sơ đến nơi có thẩm quyền đăng ký thương trú để làm thủ tục xóa đăng ký thường trú."
+    },
+    {
+        "question": "Bà nội của người yêu em là chị em họ con chú con bác với mẹ em. Như vậy, em với người yêu em có lấy nhau được không ạ?",
+        "ground_truth": "Theo khoản 18 Điều 3 Luật Hôn nhân và Gia đình 2014 Hai bạn đã nằm ngoài phạm vi 3 đời và hoàn toàn có thể lấy nhau.Tuy nhiên, trên thực tế thì hầu hết mọi người đều xem quan hệ như hai bạn là khá gần gũi và không kết hôn nên các bạn cần sớm thông báo với gia đình 02 bên được biết để bàn bạc thấu đáo."
+    },
+    {
+        "question": "Cho tôi hỏi, tôi hiện nay đang trong thời gian ly thân với chồng. Nhưng tôi cần có sổ hộ khẩu để đi xin chuyển từ chứng minh nhân dân sang thẻ căn cước và làm hồ sơ xin việc. Nhưng gia đình chồng tôi không đồng ý cho mượn sổ hộ khẩu. Vậy có cách nào hay luật nào để tôi có thể yêu cầu gia đình chồng cho tôi mượn sổ hộ khẩu không?",
+        "ground_truth": "Theo khoản 1 Điều 24 Luật Cư trú 2006 Sổ hộ khẩu cấp cho hộ gia đình là căn cứ để xác định nơi thường trú của thành viên trong hộ, do vậy, tất cả các thành viên trong hộ gia đình đều có quyền ngang nhau trong việc quản lý, sử dụng sổ hộ khẩu vào các công việc có liên quan. Như vậy, trường hợp của bạn, bạn có quyền liên hệ với cơ quan công an quản lý cư trú nơi bạn đang thường trú để được giải quyết đối với hành vi của gia đình nhà chồng bạn cản trở, không cung cấp sổ hộ khẩu theo quy định của pháp luật."
+    },
+    {
+        "question": "Hiện tại chồng tôi đang đi xuất khẩu lao động bên nước ngoài, do mâu thuẫn từ lâu nhưng chồng tôi không hợp tác để làm thủ tục ly hôn. Tôi có liên lạc nhiều lần nhưng không gặp được. Và tôi biết rằng chồng tôi vẫn giữ liên lạc với người thân gia đình bên nội của tôi tại Việt Nam. Tôi muốn tham khảo ý kiến của Luật sư liệu tôi có thể thực hiện thủ tục ly hôn với chồng hay không, và tôi phải làm như thế nào?",
+        "ground_truth": "Theo Luật hôn nhân gia đình Trong trường hợp của bạn, chồng bạn không hợp tác để làm thủ tục ly hôn, do đó sẽ xét xử theo trường hợp ly hôn đơn phương."
+    },
+    {
+        "question": "Hiện tại chồng tôi đang đi xuất khẩu lao động bên nước ngoài, do mâu thuẫn từ lâu nhưng chồng tôi không hợp tác để làm thủ tục ly hôn. Tôi có liên lạc nhiều lần nhưng không gặp được. Và tôi biết rằng chồng tôi vẫn giữ liên lạc với người thân gia đình bên nội của tôi tại Việt Nam. Tôi muốn tham khảo ý kiến của Luật sư liệu tôi có thể thực hiện thủ tục ly hôn với chồng hay không, và tôi phải làm như thế nào?",
+        "ground_truth": "Theo khoản 1 Điều 4 Thông tư 34/2017/TT-BCA Trên phương diện pháp lý thì Anh và Chị vẫn chưa phải là vợ, chồng hợp pháp, chính vì vậy, Chị không là nhân thân được quy định tại khoản 8, Điều 3 của Luật Thi hành tạm giữ, tạm giam 2015 để có thể được thăm gặp người tạm giữ, tạm giam là người mà chị cho rằng là “chồng” của mình khi không có giấy tờ xác nhận về quan hệ với người bị tạm giữ, người bị tạm giam."
+    },
+    {
+        "question": "Tôi và vợ đang làm các thủ tục ly hôn theo quy định của pháp luật và thỏa thuận xong các vấn đề tài sản. Tuy nhiên, vợ chồng tôi có cô con gái 23 tháng tuổi hiện đang được ở với mẹ. Trước giờ thu nhập chính của gia đình đều do tôi chu cấp, tôi lại có người ba mẹ ở Sài Gòn đã tới tuổi nghỉ hưu, rất tiện cho việc chăm sóc bé. Được biết sau khi ly hôn, vợ tôi sẽ thuê nhà ở chung với em gái, vợ tôi trước giờ nội trợ nên bây giờ công việc không ổn định, khó khăn về kinh tế, nguyện vọng của tôi là được đem cháu về nuôi để được chăm sóc tốt cho cháu. Tôi muốn tôi có thể giành quyền nuôi con dưới 36 tháng tuổi trong trường hợp này không?",
+        "ground_truth": "Theo khoản 3 Điều 81 Luật Hôn nhân gia đình 2014 Theo quy định của pháp luật, con dưới 36 tháng tuổi sẽ được giao cho mẹ trực tiếp nuôi. Tuy nhiên, không phải mọi trường hợp đều như vậy, trong trường người chồng chứng minh được khả năng đảm bảo tốt hơn về điều kiện vật chất và tinh thần cho con thì vẫn có thể giành được quyền nuôi con sau ly hôn."
+    },
+    {
+        "question": "Tôi và vợ đang làm các thủ tục ly hôn theo quy định của pháp luật và thỏa thuận xong các vấn đề tài sản. Tuy nhiên, vợ chồng tôi có cô con gái 23 tháng tuổi hiện đang được ở với mẹ. Trước giờ thu nhập chính của gia đình đều do tôi chu cấp, tôi lại có người ba mẹ ở Sài Gòn đã tới tuổi nghỉ hưu, rất tiện cho việc chăm sóc bé. Được biết sau khi ly hôn, vợ tôi sẽ thuê nhà ở chung với em gái, vợ tôi trước giờ nội trợ nên bây giờ công việc không ổn định, khó khăn về kinh tế, nguyện vọng của tôi là được đem cháu về nuôi để được chăm sóc tốt cho cháu. Tôi muốn tôi có thể giành quyền nuôi con dưới 36 tháng tuổi trong trường hợp này không?",
+        "ground_truth": "Theo khoản 3 Điều 81 Luật Hôn nhân gia đình 2014 Theo quy định của pháp luật, con dưới 36 tháng tuổi sẽ được giao cho mẹ trực tiếp nuôi. Tuy nhiên, không phải mọi trường hợp đều như vậy, trong trường người chồng chứng minh được khả năng đảm bảo tốt hơn về điều kiện vật chất và tinh thần cho con thì vẫn có thể giành được quyền nuôi con sau ly hôn."
+    },
+    {
+        "question": "Năm 2017, chị ruột em kết hôn. Anh rể em là con trai thứ của ông H, hiện nay cả hai đều đang sống và làm việc tại Đà Nẵng. Anh rể em có một em trai út cũng đang học tại Đà Nẵng như em, vì hay sang nhà chị chơi nên mối quan hệ của em với anh ấy rất tốt. Cách đây 6 tháng, chúng em nảy sinh tình cảm, cả hai vô tình đến với nhau. Ban đầu, vì sợ gia đình ngăn cấm nên chúng em yêu nhau rất bí mật. Nhưng câu chuyện vỡ lẽ, chúng em đang đứng trước áp lực của cả hai bên gia đình, mọi người bảo là chúng em đến với nhau là trái pháp luật. CHo em hỏi là nếu sau này chúng em kết hôn thì có trái pháp luật không?",
+        "ground_truth": "Theo khoản 2 Điều 5 Luật Hôn nhân và gia đình 2014 Bạn và bạn trai không phải là người cùng dòng máu trực hệ, không có họ trong phạm vi ba đời, vì vậy không thuộc trường hợp pháp luật cấm kết hôn. Hai bạn có thể đăng ký kết hôn và bắt đầu đời sống hôn nhân nếu đáp ứng các điều kiện kết hôn còn lại theo quy định pháp luật."
+    },
+    {
+        "question": "Em và anh ấy đang yêu nhau nhưng phát hiện ra chúng em là bà con của nhau. Ông ngoại em và ông ngoại anh ấy là 2 anh em ruột. Vậy cho em hỏi là bọn em có thể yêu nhau được không? Có thể kết hôn với nhau và sinh con được không?",
+        "ground_truth": "Theo Điều 5 Luật Hôn nhân và Gia đình 2014 Trường hợp của bạn, ông ngoại của bạn và ông ngoại của bạn trai bạn là hai anh em ruột, Vậy: Cụ ngoại của hai bạn là đời thứ nhất ông ngoại của bạn và ông ngoại của bạn trai bạn là đời thứ hai mẹ của bạn và mẹ của bạn trai bạn là đời thứ ba bạn và bạn trai bạn là đời thứ tư. Như vậy, theo luật Hôn nhân và Gia đình 2014, các bạn không vi phạm điều cấm nói trên, tức là hai bạn có thể yêu nhau, được phép kết hôn hợp pháp và sinh con."
+    },
+    {
+        "question": "Mẹ đơn thân làm Giấy khai sinh cho con thế nào?",
+        "ground_truth": "Theo Điều 15 Luật Hộ tịch năm 2014 Trong thời hạn 60 ngày kể từ ngày sinh con, bạn có trách nhiệm đăng ký khai sinh cho 02 bé, trường hợp bạn không thể đăng ký khai sinh cho con thì ông hoặc bà hoặc người thân thích khác có thể đăng ký khai sinh cho bé.Trường hợp chưa xác định được cha thì khi đăng ký khai sinh họ, dân tộc, quê quán, quốc tịch của con được xác định theo họ, dân tộc, quê quán, quốc tịch của mẹ."
+    },
+    {
+        "question": "Em và vợ em đã ra tòa xử ly hôn rồi mà chưa có quyết định như vậy đã ly hôn hay chưa?",
+        "ground_truth": "Theo Luật hôn nhân gia đình Trong trường hợp thuận tình ly hôn. Nếu 02 vợ chồng bạn thuận tình ly hôn thì trong thời hạn 07 ngày kể từ ngày lập biên bản, Thẩm phán sẽ ra Quyết định công nhận thuận tình ly hôn và việc ly hôn của 02 bạn đã hoàn tất và có hiệu lực ngay lập tức nếu 02 bạn không kháng cáo."
+    },
+    {
+        "question": "Em nghi ngờ con thứ hai mới 3 tháng tuổi không phải là con của em vì vợ em đi ngoại tình. Em muốn xác định con có phải là con của em không thì em cần làm như thế nào ạ? Nếu đúng đó không phải là con em thì em có được quyền ly hôn không?",
+        "ground_truth": "Theo Điều 88 Luật Hôn nhân và Gia đình năm 2014 Bạn có thể gửi đơn yêu cầu Tòa án xác nhận lại quan hệ cha con và yêu cầu Tòa án giải quyết. Trường hợp cần thiết, Tòa án sẽ trưng cầu giám định gen, không nên tự mình thực hiện trước.Trường hợp chưa ly hôn nhưng hiện nay vợ bạn có con nhỏ 03 tháng tuổi nhưng bạn nghi ngờ không phải là con mình do vợ ngoại tình và muốn ly hôn thì theo khoản 3 Điều 51 Luật Hôn nhân và Gia đình, chồng không có quyền yêu cầu ly hôn trong trường hợp vợ đang có thai, sinh con hoặc đang nuôi con dưới 12 tháng tuổi.Do đó, khi vợ bạn đang nuôi con dưới 12 tháng tuổi thì bạn không có quyền yêu cầu ly hôn trong thời gian này."
+    },
+    {
+        "question": "Mẹ tôi cho tôi một lô đất thổ cư trước khi kết hôn. Sau khi lấy chồng, chồng tôi làm ăn thua lỗ, Tòa án yêu cầu tôi phải chịu trách nhiệm liên đới nên đã lấy lô đất là tài sản riêng của mẹ cho tôi. Việc Tòa án lấy tài sản riêng của tôi để trả khoản nợ của chồng có được không?",
+        "ground_truth": "Theo Điều 43 Luật Hôn nhân và gia đình năm 2014  Do đây là tài sản riêng nên bạn có toàn quyền chiếm hữu, sử dụng, định đoạt. Việc chồng bạn làm ăn thua lỗ thì không thể dùng tài sản riêng của bạn để trả nợ trừ trường hợp được sự chấp thuận và đồng ý của bạn."
+    },
+    {
+        "question": "Em kết hôn năm 2017. Hiện tại sinh được 01 bé trai được 03 tháng tuổi, ở làm dâu nên có bất đồng với mẹ chồng trong cuộc sống hằng ngày, chồng em làm công an. Em thì trước khi mang thai em làm kế toán, từ khi mang thai em nghỉ ở nhà từ đó đến nay. Nay em muốn ly hôn có được không, nếu có tranh chấp quyền nuôi con thì em có được nuôi con không?",
+        "ground_truth": "Theo Điều 56 Luật Hôn nhân gia đình năm 2014 Trường hợp của chị không đáp ứng các điều kiện để ly hôn theo yêu cầu của một bên theo quy định tại Điều 56 Luật Hôn nhân gia đình năm 2014, Tòa án sẽ không xem xét giải quyết yêu cầu ly hôn của chị."
+    },
+    {
+        "question": "Theo Luật hôn nhân và gia đình năm 2014, những nguyên tắc cơ bản của chế độ hôn nhân và gia đình ở nước ta được quy định như thế nào?",
+        "ground_truth": "Theo Điều 2 Luật hôn nhân và gia đình năm 2014 Nguyên tắc cơ bản của chế độ hôn nhân và gia đình được quy định như sau. Hôn nhân tự nguyện, tiến bộ, một vợ một chồng, vợ chồng bình đẳng. Hôn nhân giữa công dân Việt Nam thuộc các dân tộc, tôn giáo, giữa người theo tôn giáo với người không theo tôn giáo, giữa người có tín ngưỡng với người không có tín ngưỡng, giữa công dân Việt Nam với người nước ngoài được tôn trọng và được pháp luật bảo vệ. Xây dựng gia đình ấm no, tiến bộ, hạnh phúc các thành viên gia đình có nghĩa vụ tôn trọng, quan tâm, chăm sóc, giúp đỡ nhau không phân biệt đối xử giữa các con. Nhà nước, xã hội và gia đình có trách nhiệm bảo vệ, hỗ trợ trẻ em, người cao tuổi, người khuyết tật thực hiện các quyền về hôn nhân và gia đình giúp đỡ các bà mẹ thực hiện tốt chức năng cao quý của người mẹ thực hiện kế hoạch hóa gia đình. Kế thừa, phát huy truyền thống văn hóa, đạo đức tốt đẹp của dân tộc Việt Nam về hôn nhân và gia đình."
+    },
+    {
+        "question": "Để bảo vệ chế độ hôn nhân và gia đình, Nhà nước ta cấm thực hiện những hành vi nào?",
+        "ground_truth": "Theo Điều 2 Luật hôn nhân và gia đình năm 2014 Nguyên tắc cơ bản của chế độ hôn nhân và gia đình được quy định như sau. Hôn nhân tự nguyện, tiến bộ, một vợ một chồng, vợ chồng bình đẳng. Hôn nhân giữa công dân Việt Nam thuộc các dân tộc, tôn giáo, giữa người theo tôn giáo với người không theo tôn giáo, giữa người có tín ngưỡng với người không có tín ngưỡng, giữa công dân Việt Nam với người nước ngoài được tôn trọng và được pháp luật bảo vệ. Xây dựng gia đình ấm no, tiến bộ, hạnh phúc các thành viên gia đình có nghĩa vụ tôn trọng, quan tâm, chăm sóc, giúp đỡ nhau, không phân biệt đối xử giữa các con. Nhà nước, xã hội và gia đình có trách nhiệm bảo vệ, hỗ trợ trẻ em, người cao tuổi, người khuyết tật thực hiện các quyền về hôn nhân và gia đình giúp đỡ các bà mẹ thực hiện tốt chức năng cao quý của người mẹ thực hiện kế hoạch hóa gia đình. Kế thừa, phát huy truyền thống văn hóa, đạo đức tốt đẹp của dân tộc Việt Nam về hôn nhân và gia đình."
+    },
+    {
+        "question": "Một số nơi ở vùng đồng bào dân tộc thiểu số, vẫn còn trường hợp thách cưới cao mang tính chất gả bán. Việc thách cưới trên có vi phạm pháp luật không?",
+        "ground_truth": "Theo Điều 7 Luật hôn nhân và gia đình năm 2014 Căn cứ vào quy định thì việc thách cưới là phong tục, tập quán lạc hậu, trái với quy định của Luật hôn nhân và gia đình, bị nghiêm cấm."
+    },
+    {
+        "question": "M sắp tròn 17 tuổi, hiện đang ở nhà phụ giúp bố mẹ làm vườn. Bố mẹ tôi ép tôi kết hôn với anh S vì hai gia đình đã hứa hôn từ khi M và S còn nhỏ. Xin hỏi, điều kiện kết hôn được quy định như thế nào? Theo quy định của pháp luật thì M đã đủ tuổi kết hôn chưa? Việc bố mẹ M ép M cưới anh S đúng hay sai?",
+        "ground_truth": "Theo Điều 8 Luật hôn nhân và gia đình năm 2014 M chưa đủ 17 tuổi, như vậy, M chưa đủ tuổi để kết hôn theo Luật hôn nhân và gia đình năm 2014.  Một trong những hành vi bị cấm trong lĩnh vực hôn nhân và gia đình là cưỡng ép kết hôn, đồng thời một trong những điều kiện kết hôn là việc kết hôn do nam, nữ tự nguyện quyết định. Như vậy, việc bố, mẹ ép M kết hôn là không đúng pháp luật."
+    },
+    {
+        "question": "Chúng tôi tổ chức đám cưới và sống chung đã được 3 năm nhưng chưa đăng ký kết hôn? Như vậy có vi phạm pháp luật không?",
+        "ground_truth": "Theo Điều 9 Luật hôn nhân và gia đình năm 2014 Việc bạn tổ chức đám cưới nhưng không đăng ký kết hôn là vi phạm quy định về đăng ký kết hôn theo Luật hôn nhân và gia đình, việc kết hôn của bạn trong trường hợp này không có giá trị pháp lý."
+    },
+    {
+        "question": "Chị H bị cha mẹ cưỡng ép kết hôn, chị H có quyền tự mình yêu cầu Tòa án hủy việc kết hôn đó không? Pháp luật quy định những cơ quan, tổ chức, cá nhân nào có quyền yêu cầu hủy việc kết hôn trái pháp luật?",
+        "ground_truth": "Theo Điều 10 Luật hôn nhân và gia đình năm 2014 Chị H bị cha mẹ cưỡng ép kết hôn, theo quy định của pháp luật về tố tụng dân sự, chi H có quyền tự mình yêu cầu hoặc đề nghị cơ quan quản lý nhà nước về gia đình, Hội liên hiệp phụ nữ ở địa phương yêu cầu Tòa án hủy việc kết hôn trái pháp luật."
+    },
+    {
+        "question": "Xử lý việc kết hôn trái pháp luật được quy định như thế nào?",
+        "ground_truth": "Theo Điều 11 Luật hôn nhân và gia đình năm 2014 Xử lý việc kết hôn trái pháp luật được Tòa án thực hiện theo quy định tại Luật hôn nhân và gia đình, pháp luật về tố tụng dân sự. Trong trường hợp tại thời điểm Tòa án giải quyết yêu cầu hủy việc kết hôn trái pháp luật mà cả hai bên kết hôn đã có đủ các điều kiện kết hôn theo quy định."
+    },
+    {
+        "question": "Mặc dù chưa ly hôn với vợ nhưng anh A đã cưới và kết hôn với chị C. Theo yêu cầu của vợ anh A, Tòa án đã tuyên bố hủy kết hôn trái pháp luật giữa anh A và chị C. Xin hỏi, theo quy định của pháp luật, quan hệ giữa anh A và chị C được giải quyết như thế nào?",
+        "ground_truth": "Theo Điều 12 Luật hôn nhân và gia đình năm 2014 Khi bị hủy kết hôn trái pháp luật, anh A và chị C phải chấm dứt quan hệ như vợ chồng.Trong trường hợp anh A và chị C đã có con chung thì quyền, nghĩa vụ của cha, mẹ, con được giải quyết theo quy định về quyền, nghĩa vụ của cha, mẹ, con khi ly hôn. Quan hệ tài sản, nghĩa vụ và hợp đồng của anh A và chị C được giải quyết theo thỏa thuận giữa các bên trong trường hợp không có thỏa thuận thì giải quyết theo quy định của Bộ luật dân sự và các quy định khác của pháp luật có liên quan."
+    },
+    {
+        "question": "Tội cưỡng ép kết hôn, ly hôn bị truy cứu hình sự như thế nào?",
+        "ground_truth": "Theo Điều 5 luật hôn nhân gia đình năm 2014  Phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 03 tháng đến 03 năm."
+    },
+    {
+        "question": "Gia đình chồng tôi theo đạo tin lành, sau khi kết hôn, chồng tôi và gia đình chồng ép tôi phải theo đạo tin lành. Xin hỏi, việc làm của họ có đúng không và pháp luật quy định vấn đề này như thế nào?",
+        "ground_truth": "Theo Điều 22 Luật hôn nhân và gia đình năm 2014 Trong trường hợp này bạn có thể giải thích, thuyết phục với chồng và gia đình chồng để họ hiểu và tôn trọng quyền tự do tín ngưỡng của bạn. Nếu như bạn không tự thuyết phục được thì nên nhờ sự giúp đỡ của những người có uy tín trong cộng đồng, chính quyền, đoàn thể nơi bạn đang sinh sống."
+    },
+    {
+        "question": "Trong thời gian người chồng đi làm ăn xa nhà, người vợ có quyền thế chấp quyền sử dụng đất là tài sản chung của vợ chồng để vay vốn, sản xuất kinh doanh không?",
+        "ground_truth": "Theo Điều 35 Luật hôn nhân và gia đình năm 2014 Quyền sử dụng đất là tài sản chung của vợ chồng. Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận.Vì vậy, trong thời gian người chồng đi làm ăn xa nhà, người vợ có quyền thế chấp quyền sử dụng đất là tài sản chung của vợ chồng để vay vốn, sản xuất kinh doanh, nếu người chồng đã có văn bản ủy quyền cho người vợ thay mặt mình thực hiện các giao dịch liên quan đến tài sản chung này."
+    },
+    {
+        "question": "Vợ chồng anh A, chị H cùng mở nhà hàng kinh doanh dịch vụ ăn uống. Trong đó, anh A trực tiếp quản lý nhà hàng. Xin hỏi, anh A có là đại diện hợp pháp của hai vợ chồng trong quan hệ kinh doanh đó không? Trường hợp vợ chồng anh A, chị H có thỏa thuận về việc đưa tài sản chung vào kinh doanh thì anh A có quyền tự mình thực hiện giao dịch liên quan đến tài sản chung đó không? Vợ anh A có phải chịu trách nhiệm liên đới đối với những giao dịch trong quan hệ kinh doanh do anh A thực hiện không?",
+        "ground_truth": "Theo Điều 25 Luật hôn nhân và gia đình năm 2014 Trong trường hợp vợ, chồng kinh doanh chung thì vợ, chồng trực tiếp tham gia quan hệ kinh doanh là người đại diện hợp pháp của nhau trong quan hệ kinh doanh đó, trừ trường hợp trước khi tham gia quan hệ kinh doanh, vợ chồng có thỏa thuận khác hoặc Luật hôn nhân và  gia đình và các luật liên quan có quy định khác. Như vậy, trong trường hợp nêu trên, anh A là người đại diện hợp pháp của hai vợ chồng trong quan hệ kinh doanh của nhà hàng. Trong trường hợp vợ chồng anh A có thỏa thuận về việc một bên đưa tài sản chung vào kinh doanh thì anh A có quyền tự mình thực hiện giao dịch liên quan đến tài sản chung đó."
+    },
+    {
+        "question": "Chiếc xe máy thường để chở hàng phục vụ đời sống trong gia đình là tài sản chung của vợ chồng anh C nhưng chỉ ghi tên vợ anh C trong giấy đăng ký xe. Xin hỏi, vợ anh C có được tự mình bán chiếc xe máy đó không?",
+        "ground_truth": "Theo Điều 35 Luật hôn nhân và gia đình năm 2014 Mặc dù chiếc xe máy này chỉ ghi tên vợ anh C trong giấy đăng ký xe nhưng nó là tài sản chung, là nguồn tạo ra thu nhập chủ yếu của gia đình và việc quyết định bán chiếc xe máy phải có sự thỏa thuận đồng ý bằng văn bản của vợ chồng anh C. Vợ anh C có thể tự mình bán chiếc xe máy nhưng phải có sự ủy quyền của anh C. Trong trường hợp vợ anh C tự mình bán chiếc xe máy với người thứ ba chưa được sự đồng ý, ủy quyền của anh C thì giao dịch đó vô hiệu."
+    },
+    {
+        "question": "Anh A là lao động chủ lực trong gia đình, còn chị T vợ anh A chỉ ở nhà nội trợ, chăm sóc con cái. Vì vậy, anh A tự cho mình có quyền quyết định đối với việc sử dụng, định đoạt tài sản chung của gia đình. Như vậy có đúng không?",
+        "ground_truth": "Theo Điều 29 Luật hôn nhân và gia đình năm 2014 Việc anh A tự cho mình có quyền quyết định đối với việc sử dụng, định đoạt tài sản chung của gia đình là không đúng và trái với nguyên tắc chung về chế độ tài sản của vợ chồng."
+    },
+    {
+        "question": "Bố mẹ anh T cho riêng anh T ngôi nhà mà hiện nay là nơi ở duy nhất của vợ chồng anh T. Trong trường hợp này, khi anh T thực hiện các giao dịch liên quan đến ngôi nhà thì có phải thỏa thuận với vợ không?",
+        "ground_truth": "Theo Điều 31 Luật hôn nhân và gia đình năm 2014 Trong trường hợp ngôi nhà là nơi ở duy nhất của vợ chồng thuộc tài sản chung của vợ chồng anh thì việc xác lập, thực hiện, chấm dứt các giao dịch liên quan đến nhà phải có sự thỏa thuận của vợ chồng.Trường hợp nêu trên, nhà thuộc sở hữu riêng của anh T thì anh T có quyền xác lập, thực hiện, chấm dứt giao dịch liên quan đến nhà đó nhưng phải bảo đảm chỗ ở cho vợ và các con của mình."
+    },
+    {
+        "question": "Chiếc tivi là tài sản chung của vợ chồng anh N, chị V. Để trả món nợ đã vay đến hạn, không bàn bạc với chồng, chị V tự ý bán chiếc tivi cho anh H. Giao dịch này có được pháp luật công nhận không?",
+        "ground_truth": "Theo Khoản 2 Điều 32 Luật hôn nhân và gia đình năm 2014 Theo quy định, chị V được coi là có quyền thực hiện việc bán chiếc tivi đó, giao dịch mua bán giữa chị V và anh H được pháp luật công nhận."
+    },
+    {
+        "question": "Chị B muốn mở cửa hàng bán quần áo để tăng thu nhập  cho gia đình nhưng anh T – chồng chị B không đồng ý. Vì vậy, chị B đòi chia một phần tài sản chung để chị lo liệu mở cửa hàng. Hai vợ chồng mâu thuẫn vì không thống nhất được với nhau. Xin hỏi, trong thời kỳ hôn nhân, vợ chồng có được chia tài sản chung không?",
+        "ground_truth": "Theo Điều 38 Luật hôn nhân và gia đình năm 2014 Trong trường hợp trên, trước hết chị B nên thuyết phục chồng đồng ý với nguyện vọng chính đáng của mình, nếu không thỏa thuận được với chồng về việc chia một phần tài sản chung, chị B có quyền yêu cầu Tòa án giải quyết."
+    },
+    {
+        "question": " Anh H làm ăn thua lỗ và mắc nợ một số cá nhân. Vợ chồng anh H lập văn bản thỏa thuận về việc chia tài sản chung nhằm trốn tránh nghĩa vụ trả nợ của anh H. Xin hỏi, văn bản thỏa thuận trên có được pháp luật công nhận không?",
+        "ground_truth": "Theo Điều 42 Luật hôn nhân và gia đình năm 2014 Trong trường hợp trên, văn bản thỏa thuận về việc chia tài sản chung của vợ chồng anh H là vô hiệu và không được pháp luật công nhận."
+    },
+    {
+        "question": "Thỏa thuận về chế độ tài sản của vợ chồng bị vô hiệu hóa trong trường hợp nào?",
+        "ground_truth": "Theo khoản 1 Điều 50 Luật hôn nhân và gia đình năm 2014 Không tuân thủ điều kiện có hiệu lực của giao dịch được quy định tại Bộ luật dân sự và các luật khác có liên quan Vi phạm một trong các quy định về nguyên tắc chung về chế độ tài sản của vợ chồng về quyền nghĩa vụ của vợ chồng trong việc đáp ứng nhu cầu thiết yếu của gia đình giao dịch liên quan đến nhà là nơi ở duy nhất của vợ chồng giao dịch với người thứ ba ngay tình liên quan đến tài khoản ngân hàng, tài khoản chứng khoán và động sản khác mà theo quy định của pháp luật không phải đăng ký quyền sở hữu, quyền sử dụng Nội dung của thỏa thuận vi phạm nghiêm trọng quyền được cấp dưỡng, quyền được thừa kế và quyền, lợi ích hợp pháp khác của cha, mẹ, con và thành viên khác của gia đình."
+    },
+    {
+        "question": "Theo quy định của pháp luật, khi vợ chồng yêu cầu ly hôn thì có bắt buộc phải tiến hành hòa giải ở cơ sở không?",
+        "ground_truth": "Theo Điều 52 Luật hôn nhân và gia đình năm 2014 Việc hòa giải ở cơ sở chỉ khuyến khích thực hiện mà không bắt buộc phải thực hiện khi vợ chồng có yêu cầu ly hôn."
+    },
+    {
+        "question": "Vợ chồng tôi tính tình không hợp nhau thường xuyên xảy ra mâu thuẫn. Cả hai chúng tôi cùng yêu cầu ly hôn. Xin hỏi, trong trường hợp này, tòa án sẽ giải quyết như thế nào?",
+        "ground_truth": "Theo Điều 55 Luật hôn nhân và gia đình năm 2014 Trong trường hợp vợ chồng bạn cùng yêu cầu ly hôn nếu xét thấy hai bên thật sự tự nguyện ly hôn và đã thỏa thuận về việc chia tài sản việc trông nom nuôi dưỡng chăm sóc giáo dục con trên cơ sở bảo đảm quyền lợi chính đáng của người vợ và con thì Tòa án công nhận thuận tình ly hôn nếu vợ chồng bạn không thỏa thuận được hoặc có thỏa thuận nhưng không bảo đảm quyền lợi chính đáng của người vợ và con thì Tòa án giải quyết việc ly hôn."
+    },
+    {
+        "question": "Chồng tôi thường xuyên uống rượu say rồi về nhà đánh đập vợ con không thể chịu đựng được cảnh sống như vậy tôi muốn ly hôn nhưng chồng tôi không chịu. Xin hỏi theo quy định của pháp luật nếu một mình tôi yêu cầu ly hôn thì tòa án có giải quyết không?",
+        "ground_truth": "Theo Khoản 1 Điều 51 Luật hôn nhân và gia đình năm 2014 Bạn có quyền yêu cầu Tòa án giải quyết ly hôn không cần có sự đồng ý của chồng bạn. Khi vợ hoặc chồng yêu cầu ly hôn mà hòa giải tại Tòa án không thành thì Tòa án giải quyết cho ly hôn nếu có căn cứ về việc vợ, chồng có hành vi bạo lực gia đình hoặc vi phạm nghiêm trọng quyền nghĩa vụ của vợ chồng làm cho hôn nhân lâm vào tình trạng trầm trọng đời sống chung không thể kéo dài mục đích của hôn nhân không đạt được."
+    },
+    {
+        "question": "Phát hiện chồng ngoại tình và đã có con với người đàn bà khác, tôi đã làm đơn yêu cầu Tòa án giải quyết ly hôn. Ngay sau khi bản án ly hôn của Tòa án có hiệu lực pháp luật, chồng tôi đã yêu cầu tôi phải dọn ra khỏi nhà ngôi nhà chồng tôi được bố mẹ tặng cho riêng trước khi chúng tôi cưới nhau. Nhưng tạm thời tôi chưa tìm được chỗ ở mới phù hợp, vậy tôi có thể xin ở đó thêm một thời gian được không?",
+        "ground_truth": "Theo Điều 63 Luật hôn nhân và gia đình năm 2014 Nhà ở thuộc sở hữu riêng của vợ, chồng đã đưa vào sử dụng chung thì khi ly hôn vẫn thuộc sở hữu riêng của người đó trường hợp vợ hoặc chồng có khó khăn về chỗ ở thì được quyền lưu cư trong thời hạn 06 tháng kể từ ngày quan hệ hôn nhân chấm dứt, trừ trường hợp các bên có thỏa thuận khác. Như vậy trong trường hợp trên bạn có quyền yêu cầu người chồng cũ cho lưu cư tại ngôi nhà của anh ấy trong thời hạn 6 tháng kể từ ngày bản án ly hôn có hiệu lực pháp luật."
+    },
+    {
+        "question": "Sau khi cưới nhau vợ chồng anh A và chị B được bố mẹ hai bên gia đình hỗ trợ tiền để mua một căn nhà tại Hà Nội trong Giấy chứng nhận quyền sở hữu nhà ghi tên của cả hai vợ chồng. Đầu năm 2014 anh A đột ngột qua đời vì tai nạn giao thông. Chị B chuyển về quê ở Thái Bình sinh sống và có ý định bán căn nhà chung của hai vợ chồng. Khi biết chuyện gia đình anh A đã yêu cầu chị B phải chia căn nhà đó theo pháp luật về thừa kế. Vậy xin hỏi Luật hôn nhân và gia đình năm 2014 quy định như thế nào về vấn đề này?",
+        "ground_truth": "Theo Điều 66 Luật hôn nhân và gia đình năm 2014 Căn cứ vào quy định khi có yêu cầu của gia đình anh A về chia di sản thừa kế thì căn nhà thuộc sở hữu chung của anh A và chị B sẽ được chia đôi. Phần tài sản của anh A sẽ được chia theo pháp luật về thừa kế với hàng thừa kế thứ nhất theo quy định của Bộ luật dân sự gồm vợ, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi của anh A."
+    },
+    {
+        "question": "Theo quy định của Luật hôn nhân và gia đình năm 2014, con có quyền và nghĩa vụ gì?",
+        "ground_truth": "Theo Điều 70 và Điều 71 Luật hôn nhân và gia đình năm 2014 Con có các quyền và nghĩa vụ sau đây. Được cha mẹ thương yêu, tôn trọng, thực hiện các quyền, lợi ích hợp pháp về nhân thân và tài sản theo quy định của pháp luật được học tập và giáo dục được phát triển lành mạnh về thể chất, trí tuệ và đạo đức. Có bổn phận yêu quý, kính trọng, biết ơn, hiếu thảo, phụng dưỡng cha mẹ, giữ gìn danh dự, truyền thống tốt đẹp của gia đình. Con chưa thành niên, con đã thành niên mất năng lực hành vi dân sự hoặc không có khả năng lao động và không có tài sản để tự nuôi mình thì có quyền sống chung với cha mẹ, được cha mẹ trông nom, nuôi dưỡng, chăm sóc. Con chưa thành niên tham gia công việc gia đình phù hợp với lứa tuổi và không trái với quy định của pháp luật về bảo vệ, chăm sóc và giáo dục trẻ em. Con đã thành niên có quyền tự do lựa chọn nghề nghiệp, nơi cư trú, học tập, nâng cao trình độ văn hóa, chuyên môn, nghiệp vụ tham gia hoạt động chính trị, kinh tế, văn hóa, xã hội theo nguyện vọng và khả năng của mình. Khi sống cùng với cha mẹ, con có nghĩa vụ tham gia công việc gia đình, lao động, sản xuất, tạo thu nhập nhằm bảo đảm đời sống chung của gia đình đóng góp thu nhập vào việc đáp ứng nhu cầu của gia đình phù hợp với khả năng của mình. Được hưởng quyền về tài sản tương xứng với công sức đóng góp vào tài sản của gia đình. Con có nghĩa vụ và quyền chăm sóc, nuôi dưỡng cha mẹ, đặc biệt khi cha mẹ mất năng lực hành vi dân sự, ốm đau, già yếu, khuyết tật trường hợp gia đình có nhiều con thì các con phải cùng nhau chăm sóc, nuôi dưỡng cha mẹ."
+    },
+    {
+        "question": "Bố mẹ chồng tôi mất có để lại di chúc cho con trai 6 tuổi của tôi quyền sử dụng mảnh đất 100 m2. Không may sau đó cháu mắc một bệnh hiểm nghèo, cần nhiều tiền để chữa trị. Vợ chồng đã thống nhất với nhau là sẽ chuyển nhượng quyền sử dụng mảnh đất này để lấy tiền chữa bệnh cho cháu. Xin hỏi, vợ chồng tôi có được đại diện cho con để thực hiện việc chuyển quyền sử dụng mảnh đất đó không?",
+        "ground_truth": "Theo Điều 73 Luật hôn nhân và gia đình năm 2014 Đối chiếu với những quy định, vợ chồng anh chị có quyền đại diện cho con thực hiện chuyển quyền sử dụng mảnh đất đó."
+    },
+    {
+        "question": "Con tôi sang nhà hàng xóm chơi, do sơ ý đã làm hỏng chiếc tivi của nhà hàng xóm, vậy xin hỏi tôi có phải bồi thường thiệt hại do con tôi gây ra hay không?",
+        "ground_truth": "Theo Điều 74 Luật hôn nhân và gia đình năm 2014 Đối chiếu với quy định, nếu con bạn chưa đủ 15 tuổi mà gây thiệt hại thì bạn phải bồi thường toàn bộ thiệt hại. Nếu tài sản của bạn không đủ để bồi thường mà con bạn có tài sản riêng thì lấy tài sản đó để bồi thường phần còn thiếu, trừ trường hợp con bạn gây thiệt hại trong thời gian học tại trường thì trường học phải bồi thường thiệt hại xảy ra. Nếu con bạn đã đủ 15 tuổi mà gây thiệt hại, con bạn phải bồi thường bằng tài sản của mình, nếu không đủ tài sản để bồi thường thì bạn phải bồi thường phần còn thiếu bằng tài sản của mình."
+    },
+    {
+        "question": "Theo Luật hôn nhân và gia đình năm 2014, con có quyền có tài sản riêng không?",
+        "ground_truth": "Theo Điều 75 Luật hôn nhân và gia đình năm 2014 Con có quyền có tài sản riêng. Tài sản riêng của con bao gồm tài sản được thừa kế riêng, được tặng cho riêng, thu nhập do lao động của con, hoa lợi, lợi tức phát sinh từ tài sản riêng của con và thu nhập hợp pháp khác. Tài sản được hình thành từ tài sản riêng của con cũng là tài sản riêng của con."
+    },
+    {
+        "question": "Bố chồng tôi qua đời, có di chúc để lại cho con trai 10 tuổi của tôi một ngôi nhà nhưng lại giao cho mẹ chồng tôi quản lý cho đến khi cháu tròn 18 tuổi. Xin hỏi Luật hôn nhân và gia đình năm 2014 quy định như thế nào về quản lý tài sản riêng của con? Vợ chồng tôi có được quyền quản lý ngôi nhà này của con tôi không?",
+        "ground_truth": "Theo Điều 76 Luật hôn nhân và gia đình năm 2014 Con bạn dưới 15 tuổi thì cha mẹ có quyền quản lý tài sản riêng của con. Tuy nhiên, đây là tài sản con bạn được thừa kế từ ông nội, mà trong di chúc của bố chồng bạn có ghi rõ mẹ chồng bạn là người quản lý tài sản này thì vợ chồng bạn không có quyền quản lý tài sản này nữa."
+    },
+    {
+        "question": "Con anh X là cháu H được ông ngoại tặng cho chiếc xe máy vào dịp sinh nhật tròn 17 tuổi. Hai tháng sau, H không thích màu sơn đó nên định bán đi mua xe khác. Bố mẹ H không đồng ý cho H bán. Xin hỏi, theo quy định của pháp luật, trong trường hợp này H có được quyền tự mình bán chiếc xe máy đó không?",
+        "ground_truth": "Theo Điều 77 Luật Hôn nhân và gia đình năm 2014 Trong trường hợp này, H mới hơn 17 tuổi, chưa đủ 18 tuổi nên là người chưa thành niên. Chiếc xe máy của H là tài sản có đăng ký quyền sở hữu. Vì vậy, theo quy định nêu trên, H chỉ được bán chiếc xe máy đó khi có sự đồng ý bằng văn bản của bố mẹ."
+    },
+    {
+        "question": "Theo Luật hôn nhân và gia đình, quyền, nghĩa vụ của cha nuôi, mẹ nuôi và con nuôi được quy định như thế nào, được xác lập và chấm dứt khi nào?",
+        "ground_truth": "Theo Điều 78 Luật Hôn nhân và gia đình năm 2014 Kể từ thời điểm quan hệ nuôi con nuôi được xác lập theo quy định của Luật nuôi con nuôi, thì cha nuôi, mẹ nuôi, con nuôi có quyền và nghĩa vụ của cha, mẹ, con được quy định theo Điều 69, 70 của Luật hôn nhân và gia đình.Trong trường hợp chấm dứt việc nuôi con nuôi theo quyết định của Tòa án thì quyền, nghĩa vụ của cha nuôi, mẹ nuôi với con nuôi chấm dứt kể từ ngày quyết định của Tòa án có hiệu lực pháp luật."
+    },
+    {
+        "question": "Ba của H qua đời đã lâu. Từ lúc còn nhỏ, H đã sống với mẹ và ba dượng. Mẹ H và ba dượng không có con. Nay, mẹ H qua đời, H đã lập gia đình và ở riêng. Vậy, theo quy định của pháp luật, H phải có trách nhiệm chăm sóc, nuôi dưỡng ba dượng hay không?",
+        "ground_truth": "Theo Điều 79 Luật hôn nhân và gia đình năm 2014 Con có nghĩa vụ chăm sóc, nuôi dưỡng cha mẹ, đặc biệt khi cha mẹ mất năng lực hành vi dân sự, ốm đau, già yếu, khuyết tật trường hợp gia đình có nhiều con thì các con phải cùng nhau chăm sóc, nuôi dưỡng cha mẹ. Như vậy, trong trường hợp này, H phải có nghĩa vụ chăm sóc, nuôi dưỡng ba dượng của mình."
+    },
+    {
+        "question": "Nghĩa vụ, quyền của cha, mẹ không trực tiếp nuôi con sau khi ly hôn được quy định như thế nào?",
+        "ground_truth": "Theo Điều 82 Luật hôn nhân và gia đình năm 2014 Cha, mẹ không trực tiếp nuôi con lạm dụng việc thăm nom để cản trở hoặc gây ảnh hưởng xấu đến việc trông nom, chăm sóc, nuôi dưỡng, giáo dục con thì người trực tiếp nuôi con có quyền yêu cầu Tòa án hạn chế quyền thăm nom con của người đó."
+    },
+    {
+        "question": "Sau khi ly hôn, vợ tôi được Tòa án cho nuôi con vì con tôi còn nhỏ. Tuy nhiên sau đó, vợ tôi lại thường xuyên phải đi công tác xa, để con lại cho mẹ cô ấy chăm sóc, cuộc sống của cháu thiếu thốn cả về vật chất và tình cảm. Vậy tôi có quyền yêu cầu Tòa án cho phép tôi nuôi con được không?",
+        "ground_truth": "Theo Điều 84 Luật hôn nhân và gia đình năm 2014 Bạn có thể thỏa thuận với vợ cũ về việc cho phép bạn trực tiếp nuôi con để bảo đảm lợi ích của con và yêu cầu Tòa án giải quyết việc đó nếu không thỏa thuận được thì bạn có thể tự mình yêu cầu hoặc đề nghị người thân thích, cơ quan quản lý nhà nước về gia đình, cơ quan quản lý nhà nước về trẻ em, Hội liên hiệp phụ nữ yêu cầu Tòa án quyết định thay đổi người trực tiếp nuôi con."
+    },
+    {
+        "question": "Pháp luật quy định những trường hợp nào thì hạn chế quyền của cha, mẹ đối với con chưa thành niên?",
+        "ground_truth": "Theo Điều 85 Luật hôn nhân và gia đình năm 2014 Cha, mẹ bị hạn chế quyền đối với con chưa thành niên trong các trường hợp sau đây. Bị kết án về một trong các tội xâm phạm tính mạng, sức khỏe, nhân phẩm, danh dự của con với lỗi cố ý hoặc có hành vi vi phạm nghiêm trọng nghĩa vụ trông nom, chăm sóc, nuôi dưỡng, giáo dục con. Phá tán tài sản của con. Có lối sống đồi trụy. Xúi giục, ép buộc con làm những việc trái pháp luật, trái đạo đức xã hội."
+    },
+    {
+        "question": "Việc xác định cha, mẹ và xác định con được quy định như thế nào?",
+        "ground_truth": "Theo Điều 88, Điều 89 Luật hôn nhân và gia đình năm 2014 Quy định việc xác định cha, mẹ và xác định con như sau. Con sinh ra trong thời kỳ hôn nhân hoặc do người vợ có thai trong thời kỳ hôn nhân là con chung của vợ chồng. Con được sinh ra trong thời hạn 300 ngày kể từ thời điểm chấm dứt hôn nhân được coi là con do người vợ có thai trong thời kỳ hôn nhân. Con sinh ra trước ngày đăng ký kết hôn và được cha mẹ thừa nhận là con chung của vợ chồng. Trong trường hợp cha, mẹ không thừa nhận con thì phải có chứng cứ và phải được Tòa án xác định. Người không được nhận là cha, mẹ của một người có thể yêu cầu Tòa án xác định người đó là con mình. Người được nhận là cha, mẹ của một người có thể yêu cầu Tòa án xác định người đó không phải là con mình."
+    },
+    {
+        "question": "Quyền nhận cha, mẹ quyền nhận con được pháp luật quy định như thế nào?",
+        "ground_truth": "Theo Điều 90, Điều 91 Luật hôn nhân và gia đình năm 2014 Quy định quyền nhận cha, mẹ quyền nhận con như sau. Con có quyền nhận cha, mẹ của mình, kể cả trong trường hợp cha, mẹ đã chết. Con đã thành niên nhận cha, không cần phải có sự đồng ý của mẹ nhận mẹ, không cần phải có sự đồng ý của cha. Cha, mẹ có quyền nhận con, kể cả trong trường hợp con đã chết. Trong trường hợp người đang có vợ, chồng mà nhận con thì việc nhận con không cần phải có sự đồng ý của người kia."
+    },
+    {
+        "question": "Điều kiện mang thai hộ vì mục đích nhân đạo được quy định như thế nào?",
+        "ground_truth": "Theo Điều 95 Luật hôn nhân và gia đình năm 2014 Vợ chồng có quyền nhờ người mang thai hộ khi có đủ các điều kiện sau đây. Có xác nhận của tổ chức y tế có thẩm quyền về việc người vợ không thể mang thai và sinh con ngay cả khi áp dụng kỹ thuật hỗ trợ sinh sản. Vợ chồng đang không có con chung. Đã được tư vấn về y tế, pháp lý, tâm lý.Người được nhờ mang thai hộ phải có đủ các điều kiện sau đây. Là người thân thích cùng hàng của bên vợ hoặc bên chồng nhờ mang thai hộ. Đã từng sinh con và chỉ được mang thai hộ một lần. Ở độ tuổi phù hợp và có xác nhận của tổ chức y tế có thẩm quyền về khả năng mang thai hộ. Trường hợp người phụ nữ mang thai hộ có chồng thì phải có sự đồng ý bằng văn bản của người chồng. Đã được tư vấn về y tế, pháp lý, tâm lý."
+    },
+    {
+        "question": "Vợ chồng anh A, chị M lấy nhau đã được hơn 4 năm nhưng không có con. Anh chị có làm văn bản thỏa thuận với chị B em họ chị M về việc mang thai hộ. Văn bản thỏa thuận này đã đáp ứng đầy đủ các điều kiện về việc mang thai hộ vì mục đích nhân đạo. Trong thỏa thuận, hai bên thống nhất với nhau về việc giao con cho bên nhờ mang thai hộ là khi con sinh ra được 4 tháng tuổi. Tuy nhiên, sau khi sinh con, chị B lại muốn tự mình nuôi và chăm sóc con nên đã không giao con cho vợ chồng anh A, chị M. Trong trường hợp này, vợ chồng anh A, chị M nên làm gì?",
+        "ground_truth": "Theo Luật hôn nhân và gia đình năm 2014 Trong trường hợp này, vợ chồng anh A có thể yêu cầu Tòa án buộc chị B giao con cho anh chị như đã thỏa thuận."
+    },
+    {
+        "question": "Tổ chức, cá nhân nào có quyền yêu cầu xác định cha, mẹ cho con chưa thành niên, con đã thành niên mất năng lực hành vi dân sự hoặc xác định con cho cha mẹ mất năng lực hành vi dân sự?",
+        "ground_truth": "Theo khoản 2 Điều 101 Luật hôn nhân và gia đình năm 2014 Cá nhân, cơ quan, tổ chức sau đây theo quy định của pháp luật về tố tụng dân sự, có quyền yêu cầu Tòa án xác định cha, mẹ cho con chưa thành niên, con đã thành niên mất năng lực hành vi dân sự xác định con cho cha, mẹ chưa thành niên hoặc mất năng lực hành vi dân sự trong các trường hợp Cha, mẹ, con, người giám hộ. Cơ quan quản lý nhà nước về gia đình. Cơ quan quản lý nhà nước về trẻ em Hội liên hiệp phụ nữ."
+    },
+    {
+        "question": "Quyền, nghĩa vụ của ông bà nội, ông bà ngoại đối với cháu được quy định như thế nào?",
+        "ground_truth": "Theo Điều 104 Luật hôn nhân và gia đình năm 2014 Ông bà nội, ông bà ngoại có quyền, nghĩa vụ trông nom, chăm sóc, giáo dục cháu, sống mẫu mực và nêu gương tốt cho con cháu trường hợp cháu chưa thành niên, cháu đã thành niên mất năng lực hành vi dân sự hoặc không có khả năng lao động và không có tài sản để tự nuôi mình mà không có người nuôi dưỡng thì ông bà nội, ông bà ngoại có nghĩa vụ nuôi dưỡng cháu."
+    },
+    {
+        "question": "Quyền và nghĩa vụ của anh chị em trong gia đình được quy định như thế nào?",
+        "ground_truth": "Theo Điều 105 Luật hôn nhân và gia đình năm 2014 Anh, chị, em có quyền, nghĩa vụ thương yêu, chăm sóc, giúp đỡ nhau có quyền, nghĩa vụ nuôi dưỡng nhau trong trường hợp không còn cha mẹ hoặc cha mẹ không có điều kiện trông nom, nuôi dưỡng, chăm sóc, giáo dục con."
+    },
+    {
+        "question": "Quan hệ hôn nhân tính từ lúc cưới hay đăng ký kết hôn?",
+        "ground_truth": "Theo Luật Hôn nhân và gia đình 2014 Theo quy định của pháp luật thì quan hệ hôn nhân được xác lập từ thời điểm đăng ký kết hôn"
+    },
+    {
+        "question": " Vợ chồng chị A đã chung sống với nhau được 3 năm và hiện đang có một con lên 2 tuổi. Tuy nhiên, trong suốt quá trình sinh sống, cả hai người đều không thấy hạnh phúc và đã nộp đơn yêu  cầu Tòa án giải quyết ly hôn. Chị A và chồng thống nhất để chị A trực tiếp nuôi con, chồng chị A có nghĩa vụ cấp dưỡng đối với con. Tuy nhiên, hai vợ chồng chị A không thống nhất được mức cấp dưỡng. Xin hỏi pháp luật quy định về vấn đề này như thế nào?",
+        "ground_truth": "Theo Điều 116 Luật hôn nhân và gia đình năm 2014 Mức cấp dưỡng nuôi con do chị A và chồng chị A thỏa thuận căn cứ vào thu nhập, khả năng thực tế của chồng chị A và nhu cầu thiết yếu của người con nếu không thỏa thuận được thì yêu cầu Tòa án giải quyết. Khi có lý do chính đáng, mức cấp dưỡng có thể thay đổi. Việc thay đổi mức cấp dưỡng do các bên thỏa thuận nếu không thỏa thuận được thì yêu cầu Tòa án giải quyết."
+    },
+    {
+        "question": "Thế nào là chế độ hôn nhân và gia đình?",
+        "ground_truth": "Theo khoản 3, Điều 3 Luật Hôn nhân và gia đình năm 2014 Chế độ hôn nhân và gia đình là toàn bộ những quy định của pháp luật về kết hôn, ly hôn quyền và nghĩa vụ giữa vợ và chồng, giữa cha mẹ và con, giữa các thành viên khác trong gia  đình cấp dưỡng xác định cha, mẹ, con quan hệ hôn nhân và gia đình có yếu tố nước ngoài và những vấn đề khác liên quan đến hôn nhân và gia đình."
+    },
+    {
+        "question": "Những nguyên tắc cơ bản của chế độ hôn nhân và gia đình ở nước ta được quy định như thế nào?",
+        "ground_truth": "Theo Điều 2 Luật HNGĐ năm 2014 Hôn nhân tự nguyện, tiến bộ, một vợ một chồng, vợ chồng bình đẳng. Hôn nhân giữa công dân Việt Nam thuộc các dân tộc, tôn giáo, giữa người theo tôn giáo với người không theo tôn giáo, giữa người có tín ngưỡng với người không có tín ngưỡng, giữa công dân Việt Nam với người nước ngoài được tôn trọng và được pháp luật bảo vệ. Xây dựng gia đình ấm no, tiến bộ, hạnh phúc các thành viên gia đình có nghĩa vụ tôn trọng, quan tâm, chăm sóc, giúp đỡ nhau không phân biệt đối xử giữa các con. Nhà nước, xã hội và gia đình có trách nhiệm bảo vệ, hỗ trợ trẻ em, người cao tuổi, người khuyết tật thực hiện các quyền về hôn nhân và gia đình giúp đỡ các bà mẹ thực hiện tốt chức năng cao quý của người mẹ thực hiện kế hoạch hóa gia đình. Kế thừa, phát huy truyền thống văn hóa, đạo đức tốt đẹp của dân tộc Việt Nam về hôn nhân và gia đình."
+    },
+    {
+        "question": "Những nguyên tắc cơ bản của chế độ hôn nhân và gia đình ở nước ta được quy định như thế nào?",
+        "ground_truth": "Theo Điều 2 Luật HNGĐ năm 2014 Hôn nhân tự nguyện, tiến bộ, một vợ một chồng, vợ chồng bình đẳng. Hôn nhân giữa công dân Việt Nam thuộc các dân tộc, tôn giáo, giữa người theo tôn giáo với người không theo tôn giáo, giữa người có tín ngưỡng với người không có tín ngưỡng, giữa công dân Việt Nam với người nước ngoài được tôn trọng và được pháp luật bảo vệ. Xây dựng gia đình ấm no, tiến bộ, hạnh phúc các thành viên gia đình có nghĩa vụ tôn trọng, quan tâm, chăm sóc, giúp đỡ nhau không phân biệt đối xử giữa các con. Nhà nước, xã hội và gia đình có trách nhiệm bảo vệ, hỗ trợ trẻ em, người cao tuổi, người khuyết tật thực hiện các quyền về hôn nhân và gia đình giúp đỡ các bà mẹ thực hiện tốt chức năng cao quý của người mẹ thực hiện kế hoạch hóa gia đình. Kế thừa, phát huy truyền thống văn hóa, đạo đức tốt đẹp của dân tộc Việt Nam về hôn nhân và gia đình."
+    },
+    {
+        "question": " Để bảo vệ chế độ hôn nhân và gia đình, nhà nước ta cấm thực hiện những hành vi nào?",
+        "ground_truth": "Theo Điều 5 Luật HNGĐ năm 2014 Kết hôn giả tạo, ly hôn giả tạo. Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn. Người đang có vợ, có chồng mà kết hôn hoặc chung sống như vợ chồng với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn hoặc chung sống như vợ chồng với người đang có chồng, có vợ Kết hôn hoặc chung sống như vợ chồng giữa những người cùng dòng máu về trực hệ giữa những người có họ trong phạm vi ba đời giữa cha, mẹ nuôi với con nuôi giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng Yêu sách của cải trong kết hôn Cưỡng ép ly hôn, lừa dối ly hôn, cản trở ly hôn. Thực hiện sinh con bằng kỹ thuật hỗ trợ sinh sản vì mục đích thương mại, mang thai hộ vì mục đích thương mại, lựa chọn giới tính thai nhi, sinh sản vô tính Bạo lực gia đình Lợi dụng việc thực hiện quyền về hôn nhân và gia đình để mua bán người, bóc lột sức lao động, xâm phạm tình dục hoặc có hành vi khác nhằm mục đích trục lợi."
+    },
+    {
+        "question": "Hôn nhân là gì?",
+        "ground_truth": "Theo khoản 1, Điều 3 Luật HNGĐ năm 2014 Hôn nhân là quan hệ giữa vợ và chồng sau khi kết hôn."
+    },
+    {
+        "question": "Nam, nữ muốn kết hôn thì phải đáp ứng những điều kiện gì?",
+        "ground_truth": "Theo Điều 8 Luật HNGĐ năm 2014 Điều kiện về độ tuổi Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên. Điều kiện về thể hiện ý chí, nguyện vọng trong xác lập quan hệ hôn nhân Việc kết hôn do nam và nữ tự nguyện quyết định. Điều kiện về năng lực chủ thể Nam, nữ không bị mất năng lực hành vi dân sự. Điều kiện không vi phạm các trường hợp cấm kết hôn Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn theo quy định tại. Ngoài ra, Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính."
+    },
+    {
+        "question": "Điều kiện về độ tuổi kết hôn theo quy định của Luật HNGĐ năm 2014 có gì mới so với quy định của Luật HNGĐ năm 2000?",
+        "ground_truth": "Theo điều Luật HNGĐ năm 2000 Thay vì vừa bước qua tuổi 18 đối với nữ và vừa bước qua tuổi 20 đối với nam như quy định tại Luật HNGĐ năm 2000, Luật HNG năm 2014 nâng độ tuổi kết hôn từ đủ 18 tuổi trở lên đối với nữ và từ đủ 20 tuổi trở lên đối với nam để thống nhất với quy định của Bộ luật Dân sự và Bộ luật Tố tụng dân sự. Theo Bộ luật Dân sự, người chưa đủ 18 tuổi là người chưa thành niên, khi xác lập, thực hiện giao dịch dân sự phải được người đại diện theo pháp luật đồng ý. Còn theo Bộ luật Tố tụng dân sự thì đương sự là người từ đủ 18 tuổi trở lên mới có đầy đủ năng lực hành vi tố tụng dân sự. Như vậy, nếu cho phép người chưa đủ 18 tuổi kết hôn là không hợp lý, thiếu đồng bộ và làm hạn chế một số quyền của người nữ khi xác lập các giao dịch như quyền yêu cầu ly hôn thì phải có người đại diện."
+    },
+    {
+        "question": "Đăng ký kết hôn được quy định như thế nào?",
+        "ground_truth": "Theo Điều 9 Luật HNGĐ năm 2014 Việc kết hôn phải được đăng ký và do cơ quan nhà nước có thẩm quyền thực hiện theo quy định của Luật HNGĐ và pháp luật về hộ tịch. Việc kết hôn không được đăng ký theo quy định của pháp luật thì không có giá trị pháp lý. Vợ chồng đã ly hôn muốn xác lập lại quan hệ vợ chồng thì phải đăng ký kết hôn."
+    },
+    {
+        "question": "Đăng ký kết hôn cần những loại giấy tờ gì?",
+        "ground_truth": "Theo Luật HNGĐ Giấy xác nhận tình trạng hôn nhân. Chứng minh thư nhân dân hoặc Hộ chiếu hoặc giấy tờ tùy thân khác của cả hai bên nam nữ để xuất trình khi đăng ký kết hôn. Hộ khẩu thường trú hoặc giấy đăng ký tạm trú của cả hai bên nam nữ. Với trường hợp một trong hai bên nam nữ tại nơi đăng 15 ký kết hôn vì các lý do chính đáng, người vắng mặt phải chuẩn bị một tờ đơn xin vắng mặt, trong đó trình bày rõ lý do không thể đến, có xác nhận của Ủy ban nhân dân cấp xã nơi xin vắng mặt cư trú."
+    },
+    {
+        "question": "Tập quán về hôn nhân và gia đình là gì?",
+        "ground_truth": "Theo khoản 4, Điều 9 Luật HNGĐ năm 2014 Tập quán về hôn nhân và gia đình là quy tắc xử sự có nội dung rõ ràng về quyền, nghĩa vụ của các bên trong quan hệ hôn nhân và gia đình, được lặp đi, lặp lại trong một thời gian dài và được thừa nhận rộng rãi trong một vùng, miền hoặc cộng đồng."
+    },
+    {
+        "question": "Tập quán về hôn nhân và gia đình được áp dụng trong trường hợp nào?",
+        "ground_truth": "Theo Điều 7 Luật HNGĐ năm 2014 Chỉ áp dụng tập quán về hôn nhân và gia đình trong trường hợp pháp luật không quy định và các bên không có thỏa thuận thì tập quán tốt đẹp thể hiện bản sắc của mỗi dân tộc, không trái với nguyên tắc quy định"
+    }
+]

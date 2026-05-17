@@ -1,4 +1,3 @@
-from ollama import AsyncClient
 from app.core.config import settings
 from app.core.logger import logger
 from app.services.prompt_manager import prompt_manager
@@ -21,13 +20,9 @@ class QueryRewriterService:
             "content": f"Hãy viết lại câu hỏi này: {user_query}"
         })
 
-        # 2. Cấu hình Headers (Auth)
-        headers = {}
-        if settings.OLLAMA_API_KEY:
-            headers['Authorization'] = f'Bearer {settings.OLLAMA_API_KEY}'
-
         try:
-            client = AsyncClient(host=settings.LLM_BASE_URL, headers=headers)
+            from app.infrastructure.llm.ollama_service import get_ollama_client
+            client = get_ollama_client()
             response = await client.chat(
                 model=settings.LLM_MODEL,
                 messages=messages

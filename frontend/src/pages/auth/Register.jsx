@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { authApi } from '../../api/authApi';
 import { useNavigate, Link } from 'react-router-dom';
+import ThemeToggle from '../../components/ThemeToggle';
 import './Auth.css';
 
 export default function Register() {
@@ -29,6 +30,7 @@ export default function Register() {
 
   return (
     <div className="auth-container">
+      <ThemeToggle className="auth-theme-toggle" />
       <div className="auth-box">
         <div className="auth-header">
           <h2>Đăng Ký</h2>

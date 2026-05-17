@@ -64,3 +64,32 @@
   font-size: 14px;
   color: var(--text-secondary);
 }
+
+/* Light Mode Overrides */
+[data-theme="light"] .auth-container {
+  background: linear-gradient(160deg, #f4f6f9 0%, #edf0f5 50%, #e8ecf3 100%);
+}
+[data-theme="light"] .auth-box {
+  background: #ffffff;
+  border-color: #d0d7de;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+[data-theme="light"] .auth-header h2 {
+  color: #1a202c;
+}
+[data-theme="light"] .auth-header p {
+  color: #4a5568;
+}
+[data-theme="light"] .form-group label {
+  color: #1a202c;
+}
+[data-theme="light"] .auth-footer {
+  color: #4a5568;
+}
+
+.auth-theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+}

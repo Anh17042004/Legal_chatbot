@@ -1,0 +1,154 @@
+[
+  {
+    "history": [
+      {"role": "user", "content": "Điều kiện ly hôn đơn phương là gì?"},
+      {"role": "assistant", "content": "Theo Điều 56 Luật Hôn nhân và gia đình 2014, một bên vợ hoặc chồng yêu cầu ly hôn khi có căn cứ cho rằng vợ chồng đã mâu thuẫn trầm trọng, bạo lực gia đình làm cuộc sống không thể kéo dài, mục đích hôn nhân không đạt được."}
+    ],
+    "follow_up": "Cần chuẩn bị giấy tờ gì?",
+    "expected_standalone": "Cần chuẩn bị giấy tờ gì khi nộp đơn ly hôn đơn phương?",
+    "category": "pronoun_resolution",
+    "description": "Follow-up hỏi giấy tờ - cần resolve 'giấy tờ gì' về ly hôn đơn phương"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Quyền nuôi con sau ly hôn được quyết định thế nào?"},
+      {"role": "assistant", "content": "Theo Điều 81 Luật HNGĐ 2014, con dưới 36 tháng tuổi giao cho mẹ trực tiếp nuôi, trừ trường hợp người mẹ không đủ điều kiện. Con từ đủ 7 tuổi trở lên phải xem xét nguyện vọng của con."}
+    ],
+    "follow_up": "Nếu con trên 7 tuổi thì khác gì?",
+    "expected_standalone": "Quyền nuôi con sau ly hôn khi con trên 7 tuổi được quyết định khác như thế nào so với con dưới 7 tuổi?",
+    "category": "context_enrichment",
+    "description": "Follow-up hỏi trường hợp con lớn hơn - cần bổ sung context 'quyền nuôi con sau ly hôn'"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Vợ chồng chia tài sản khi ly hôn như thế nào?"},
+      {"role": "assistant", "content": "Tài sản chung được chia theo thỏa thuận, nếu không thỏa thuận được thì yêu cầu Tòa án giải quyết. Nguyên tắc chia đôi, có xem xét hoàn cảnh mỗi bên."}
+    ],
+    "follow_up": "Thế còn tài sản riêng thì sao?",
+    "expected_standalone": "Tài sản riêng của vợ hoặc chồng được xử lý thế nào khi ly hôn?",
+    "category": "topic_continuation",
+    "description": "Chuyển từ tài sản chung sang tài sản riêng - cần giữ context 'ly hôn'"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Thủ tục đăng ký kết hôn gồm những gì?"},
+      {"role": "assistant", "content": "Hai bên nam nữ nộp tờ khai đăng ký kết hôn tại UBND cấp xã nơi cư trú của một trong hai bên. Kèm theo giấy xác nhận tình trạng hôn nhân, CMND/CCCD, giấy khám sức khỏe."}
+    ],
+    "follow_up": "Mất bao lâu?",
+    "expected_standalone": "Thủ tục đăng ký kết hôn tại UBND cấp xã mất bao lâu để hoàn thành?",
+    "category": "pronoun_resolution",
+    "description": "Câu hỏi cực ngắn - cần resolve 'mất bao lâu' về đăng ký kết hôn"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Bạo lực gia đình bị xử phạt thế nào?"},
+      {"role": "assistant", "content": "Hành vi bạo lực gia đình có thể bị xử phạt hành chính theo Nghị định 144/2021/NĐ-CP hoặc truy cứu trách nhiệm hình sự nếu gây thương tích nặng."}
+    ],
+    "follow_up": "Chi tiết hơn về mức phạt hành chính được không?",
+    "expected_standalone": "Mức phạt hành chính cụ thể đối với hành vi bạo lực gia đình theo quy định pháp luật là bao nhiêu?",
+    "category": "context_enrichment",
+    "description": "Yêu cầu chi tiết hơn - cần bổ sung context 'bạo lực gia đình' + 'phạt hành chính'"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Mức cấp dưỡng cho con sau ly hôn là bao nhiêu?"},
+      {"role": "assistant", "content": "Mức cấp dưỡng do hai bên thỏa thuận. Nếu không thỏa thuận được, Tòa án quyết định dựa trên thu nhập, khả năng thực tế của bên cấp dưỡng và nhu cầu thiết yếu của con."}
+    ],
+    "follow_up": "Nếu bên kia không chịu trả thì làm sao?",
+    "expected_standalone": "Nếu bên có nghĩa vụ cấp dưỡng cho con sau ly hôn không chịu thực hiện nghĩa vụ cấp dưỡng thì phải làm thế nào?",
+    "category": "pronoun_resolution",
+    "description": "Resolve 'bên kia' và 'trả' về context cấp dưỡng sau ly hôn"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Kết hôn với người nước ngoài cần điều kiện gì?"},
+      {"role": "assistant", "content": "Theo Điều 126 Luật HNGĐ 2014, kết hôn có yếu tố nước ngoài phải tuân thủ pháp luật Việt Nam về điều kiện kết hôn. Cần đăng ký tại Sở Tư pháp cấp tỉnh."}
+    ],
+    "follow_up": "Giấy tờ cần thiết là gì?",
+    "expected_standalone": "Khi đăng ký kết hôn với người nước ngoài tại Việt Nam cần chuẩn bị những giấy tờ gì?",
+    "category": "pronoun_resolution",
+    "description": "Resolve 'giấy tờ' về kết hôn với người nước ngoài"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Có bắt buộc phải theo đạo bên chồng khi kết hôn không?"},
+      {"role": "assistant", "content": "Không. Theo Điều 22 Luật HNGĐ 2014, vợ chồng có nghĩa vụ tôn trọng quyền tự do tín ngưỡng, tôn giáo của nhau. Pháp luật không bắt buộc phải theo đạo của bên kia."}
+    ],
+    "follow_up": "Nếu bị ép thì xử lý ra sao?",
+    "expected_standalone": "Nếu bị gia đình chồng ép buộc phải theo tôn giáo của nhà chồng khi kết hôn thì pháp luật xử lý thế nào?",
+    "category": "context_enrichment",
+    "description": "Bổ sung context 'ép theo đạo' + 'kết hôn' + 'xử lý pháp lý'"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Chồng có được ngăn cản vợ thăm con sau ly hôn không?"},
+      {"role": "assistant", "content": "Không. Theo Điều 82 Luật HNGĐ 2014, cha mẹ không trực tiếp nuôi con vẫn có quyền thăm nom con. Nếu bị cản trở, có thể yêu cầu Tòa án can thiệp."}
+    ],
+    "follow_up": "Tòa án can thiệp như thế nào?",
+    "expected_standalone": "Tòa án can thiệp thế nào khi một bên bị cản trở quyền thăm nom con sau ly hôn?",
+    "category": "topic_continuation",
+    "description": "Tiếp tục chủ đề can thiệp Tòa án - cần giữ context thăm nom con sau ly hôn"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Trong thời kỳ hôn nhân, vợ chồng có được chia tài sản chung không?"},
+      {"role": "assistant", "content": "Được. Theo Điều 38 Luật HNGĐ 2014, vợ chồng có quyền thỏa thuận chia một phần hoặc toàn bộ tài sản chung trong thời kỳ hôn nhân."}
+    ],
+    "follow_up": "Trường hợp nào thì việc chia bị vô hiệu?",
+    "expected_standalone": "Trường hợp nào thì việc chia tài sản chung của vợ chồng trong thời kỳ hôn nhân bị coi là vô hiệu?",
+    "category": "context_enrichment",
+    "description": "Hỏi sâu về ngoại lệ - cần bổ sung context chia tài sản trong hôn nhân"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Tuổi kết hôn tối thiểu theo luật Việt Nam là bao nhiêu?"},
+      {"role": "assistant", "content": "Nam từ đủ 20 tuổi, nữ từ đủ 18 tuổi trở lên theo Điều 8 Luật HNGĐ 2014."}
+    ],
+    "follow_up": "Vi phạm thì bị sao?",
+    "expected_standalone": "Nếu vi phạm quy định về tuổi kết hôn tối thiểu (tảo hôn) thì bị xử lý thế nào theo pháp luật?",
+    "category": "pronoun_resolution",
+    "description": "Câu cực ngắn - cần resolve 'vi phạm' về tảo hôn + thuật ngữ pháp lý"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Con sinh ra trước khi đăng ký kết hôn có được coi là con chung không?"},
+      {"role": "assistant", "content": "Theo Điều 88 Luật HNGĐ 2014, con sinh ra trong thời kỳ hôn nhân hoặc do người vợ có thai trong thời kỳ hôn nhân là con chung. Con sinh trước kết hôn cần được cha nhận con hoặc xác nhận qua Tòa án."}
+    ],
+    "follow_up": "Thủ tục nhận con thế nào?",
+    "expected_standalone": "Thủ tục nhận con ngoài giá thú (con sinh ra trước khi đăng ký kết hôn) được thực hiện thế nào?",
+    "category": "pronoun_resolution",
+    "description": "Resolve 'nhận con' + bổ sung thuật ngữ pháp lý 'con ngoài giá thú'"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Ly hôn đơn phương cần điều kiện gì?"},
+      {"role": "assistant", "content": "Theo Điều 56, cần chứng minh mâu thuẫn trầm trọng hoặc bạo lực gia đình."},
+      {"role": "user", "content": "Cần chuẩn bị giấy tờ gì để nộp đơn?"},
+      {"role": "assistant", "content": "Cần đơn khởi kiện, CCCD, sổ hộ khẩu, giấy đăng ký kết hôn, giấy khai sinh con nếu có."}
+    ],
+    "follow_up": "Nộp ở đâu?",
+    "expected_standalone": "Đơn khởi kiện ly hôn đơn phương phải nộp ở đâu (tòa án nào có thẩm quyền giải quyết)?",
+    "category": "multi_turn",
+    "description": "Multi-turn: 4 messages history - cần resolve 'nộp ở đâu' về đơn ly hôn"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Chồng tôi ngoại tình, tôi muốn ly hôn"},
+      {"role": "assistant", "content": "Trong trường hợp này, bạn có thể nộp đơn ly hôn đơn phương tại Tòa án. Hành vi ngoại tình của chồng có thể là căn cứ để Tòa án chấp nhận yêu cầu ly hôn."}
+    ],
+    "follow_up": "Tôi có được chia nhiều tài sản hơn không?",
+    "expected_standalone": "Khi ly hôn do chồng ngoại tình, người vợ có được chia phần tài sản chung nhiều hơn so với người chồng có lỗi không?",
+    "category": "context_enrichment",
+    "description": "Bổ sung context ngoại tình + ly hôn + chia tài sản do lỗi"
+  },
+  {
+    "history": [
+      {"role": "user", "content": "Quyền thăm nom con sau ly hôn được quy định ra sao?"},
+      {"role": "assistant", "content": "Người không trực tiếp nuôi con có quyền thăm nom con. Người trực tiếp nuôi con không được cản trở. Nếu việc thăm nom bị lạm dụng, Tòa có thể hạn chế."}
+    ],
+    "follow_up": "Hạn chế thăm nom trong trường hợp nào?",
+    "expected_standalone": "Tòa án hạn chế quyền thăm nom con sau ly hôn trong trường hợp nào?",
+    "category": "topic_continuation",
+    "description": "Đào sâu vào chi tiết hạn chế - giữ context thăm nom con"
+  }
+]

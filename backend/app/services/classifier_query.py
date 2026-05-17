@@ -1,5 +1,4 @@
 import json
-from ollama import AsyncClient
 
 from app.core.config import settings
 from app.core.logger import logger
@@ -61,12 +60,8 @@ class IntentRouter:
 
     async def classify_intent(self, user_message: str, history: list[dict] | None = None) -> dict:
         try:
-            client = AsyncClient(
-                host=settings.LLM_BASE_URL,
-                headers={
-                    "Authorization": f"Bearer {settings.OLLAMA_API_KEY}"
-                } if settings.OLLAMA_API_KEY else {}
-            )
+            from app.infrastructure.llm.ollama_service import get_ollama_client
+            client = get_ollama_client()
 
             response = await client.chat(
                 model=settings.LLM_MODEL,
