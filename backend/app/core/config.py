@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     #database 
     MILVUS_URI: str
     MILVUS_TOKEN: str
-    MILVUS_DB_NAME: str
+    MILVUS_DB_NAME: str = ""
     NEO4J_URI: str
     NEO4J_USERNAME: str
     NEO4J_PASSWORD: str
