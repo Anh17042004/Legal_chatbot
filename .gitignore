@@ -135,7 +135,7 @@ dmypy.json
 *.pth
 *.pt
 *.onnx
-models/
+/models/
 checkpoints/
 weights/
 
