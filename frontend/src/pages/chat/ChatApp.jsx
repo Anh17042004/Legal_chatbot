@@ -1,15 +1,24 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useAuth } from '../../contexts/AuthContext';
 import { chatApi } from '../../api/chatApi';
-import { apiStream } from '../../api/client';
+import { apiStream, apiFetch } from '../../api/client';
+import { getUrlBySoHieu } from '../../data/sohieuUrlMap';
 import ThemeToggle from '../../components/ThemeToggle';
 import './ChatApp.css';
 
 const SIDEBAR_MIN = 240;
 const SIDEBAR_MAX = 480;
 const SIDEBAR_DEFAULT = 300;
+
+/* ─── Helper: extract plain text from React children ─── */
+function extractTextFromChildren(children) {
+  if (typeof children === 'string') return children;
+  if (Array.isArray(children)) return children.map(extractTextFromChildren).join('');
+  if (children?.props?.children) return extractTextFromChildren(children.props.children);
+  return '';
+}
 
 export default function ChatApp() {
   const { user, logout, loadUser } = useAuth();
@@ -23,10 +32,14 @@ export default function ChatApp() {
   const [sidebarWidth, setSidebarWidth] = useState(SIDEBAR_DEFAULT);
   const [isDragging, setIsDragging] = useState(false);
 
+  /* ─── Document Viewer Modal ─── */
+  const [docModal, setDocModal] = useState({ open: false, html: '', title: '', loading: false });
+
   const messagesEndRef = useRef(null);
   const dragRef = useRef(null);
   const currentSessionIdRef = useRef(null);
   const isStreamingRef = useRef(false);
+  const justFinishedStreamRef = useRef(false);
 
   const quickPrompts = [
     'Điều kiện ly hôn đơn phương là gì?',
@@ -89,6 +102,13 @@ export default function ChatApp() {
 
     // Do not overwrite optimistic/live stream messages while streaming.
     if (isStreaming) return;
+
+    // After streaming just finished, skip reload — messages already have
+    // the latest content + references from the SSE stream.
+    if (justFinishedStreamRef.current) {
+      justFinishedStreamRef.current = false;
+      return;
+    }
 
     loadHistory(currentSessionId);
   }, [currentSessionId, isStreaming]);
@@ -165,6 +185,28 @@ export default function ChatApp() {
       document.body.style.userSelect = '';
     };
   }, [isDragging]);
+
+  /* ─── Document Viewer ─── */
+  const handleRefClick = async (url) => {
+    setDocModal({ open: true, html: '', title: 'Đang tải văn bản...', loading: true });
+    try {
+      const data = await apiFetch('/documents/fetch', {
+        method: 'POST',
+        body: JSON.stringify({ url }),
+      });
+      setDocModal({ open: true, html: data.html, title: data.title, loading: false });
+    } catch (err) {
+      console.error('Document fetch error:', err);
+      setDocModal({
+        open: true,
+        html: '<div style="padding:40px;text-align:center;color:#94a3b8;"><p style="font-size:18px;margin-bottom:12px;">⚠️ Không thể tải văn bản</p><p>Vui lòng thử lại sau hoặc truy cập trực tiếp trang luatvietnam.vn</p></div>',
+        title: 'Lỗi tải văn bản',
+        loading: false,
+      });
+    }
+  };
+
+  const closeDocModal = () => setDocModal({ open: false, html: '', title: '', loading: false });
 
   /* ─── Submit chat ─── */
   const handleSubmit = async (e) => {
@@ -253,9 +295,46 @@ export default function ChatApp() {
         return msgs;
       });
     } finally {
+      justFinishedStreamRef.current = true;
       setIsStreaming(false);
       loadUser();
     }
+  };
+
+  /* ─── Reference-aware Markdown Component ─── */
+  const ReferenceMarkdown = ({ content }) => {
+    const components = useMemo(() => ({
+      li: ({ children, ...props }) => {
+        const text = extractTextFromChildren(children);
+        const match = text.match(/^\[(\d+)\]\s*(.+)/);
+        if (match) {
+          const soHieu = match[2].trim();
+          const url = getUrlBySoHieu(soHieu);
+          if (url) {
+            return (
+              <li {...props}>
+                <button
+                  className="ref-doc-btn"
+                  onClick={() => handleRefClick(url)}
+                  title={`Xem nội dung: ${soHieu}`}
+                >
+                  <span className="ref-doc-icon">📄</span>
+                  <span>[{match[1]}] {soHieu}</span>
+                  <span className="ref-doc-arrow">→</span>
+                </button>
+              </li>
+            );
+          }
+        }
+        return <li {...props}>{children}</li>;
+      },
+    }), []);
+
+    return (
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+        {content}
+      </ReactMarkdown>
+    );
   };
 
   /* ─── Render ─── */
@@ -412,7 +491,7 @@ export default function ChatApp() {
                     </li>
                     <li>
                       <span className="dot">•</span>
-                      <span>Mỗi câu trả lời có phần <strong>references</strong> để kiểm chứng nguồn.</span>
+                      <span>Mỗi câu trả lời có phần <strong>references</strong> — click để xem văn bản gốc.</span>
                     </li>
                     <li>
                       <span className="dot">•</span>
@@ -446,28 +525,15 @@ export default function ChatApp() {
                           <div className="thinking-dots-anim">
                             <span /><span /><span />
                           </div>
-                          <span>AI đang tra cứu luật pháp...</span>
+                          <span>AI đang tra cứu pháp luật, vui lòng đợi...</span>
                         </div>
                       ) : (
                         <div className="legal-markdown">
-                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                            {msg.content}
-                          </ReactMarkdown>
+                          <ReferenceMarkdown content={msg.content} />
                         </div>
                       )}
 
-                      {msg.references?.length > 0 && (
-                        <div className="msg-refs">
-                          <div className="msg-refs-label">Nguồn trích dẫn</div>
-                          <div className="msg-refs-list">
-                            {msg.references.map((ref, ri) => (
-                              <span key={ri} className="msg-ref-tag">
-                                {ref.label || ref.file_path || 'Tài liệu liên quan'}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
+
                     </div>
                   ) : (
                     <div className="msg-bubble-user">
@@ -513,6 +579,36 @@ export default function ChatApp() {
           </div>
         </div>
       </main>
+
+      {/* ─── Document Viewer Modal ─── */}
+      {docModal.open && (
+        <div className="doc-modal-overlay" onClick={closeDocModal}>
+          <div className="doc-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="doc-modal-header">
+              <div className="doc-modal-title-area">
+                <span className="doc-modal-badge">📄 Văn bản pháp luật</span>
+                <h2 className="doc-modal-title">{docModal.title}</h2>
+              </div>
+              <button className="doc-modal-close" onClick={closeDocModal} title="Đóng">
+                ✕
+              </button>
+            </div>
+            <div className="doc-modal-body">
+              {docModal.loading ? (
+                <div className="doc-modal-loading">
+                  <div className="doc-loading-spinner" />
+                  <p>Đang tải nội dung văn bản...</p>
+                </div>
+              ) : (
+                <div
+                  className="doc-content"
+                  dangerouslySetInnerHTML={{ __html: docModal.html }}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

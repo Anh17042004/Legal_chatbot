@@ -4,9 +4,6 @@ from app.core.config import settings
 from lightrag.llm.ollama import ollama_model_complete
 
 def get_ollama_client() -> AsyncClient:
-    """
-    Tạo AsyncClient với API Key tự động xoay vòng.
-    """
     key = ollama_key_manager.get_next_key()
     headers = {}
     if key:
@@ -21,9 +18,6 @@ async def custom_ollama_model_complete(
     enable_cot: bool = False,
     **kwargs,
 ):
-    """
-    Wrapper thread-safe cho LightRAG để nhúng API Key xoay vòng vào kwargs.
-    """
     if history_messages is None:
         history_messages = []
         

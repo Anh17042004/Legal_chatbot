@@ -214,7 +214,7 @@ async def chat_stream(
                     chunk_json = json.dumps({"type": "chunk", "content": content}, ensure_ascii=False)
                     yield f"data: {chunk_json}\n\n"
 
-                # # Gửi references sau khi đã stream xong nội dung trả lời
+                # References đã có trong nội dung markdown, frontend parse trực tiếp
                 # meta_json = json.dumps({"type": "meta", "references": references}, ensure_ascii=False)
                 # yield f"data: {meta_json}\n\n"
                 

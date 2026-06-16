@@ -650,6 +650,231 @@
   font-weight: 500;
   color: #a7f3d0;
 }
+.msg-ref-tag.clickable {
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+.msg-ref-tag.clickable:hover {
+  background: rgba(16,185,129,0.15);
+  border-color: rgba(52,211,153,0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(16,185,129,0.15);
+}
+
+/* ═══════════════════════════════════════
+   Reference Document Button (inside markdown)
+   ═══════════════════════════════════════ */
+.ref-doc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(16,185,129,0.08);
+  color: #6ee7b7;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  line-height: 1.6;
+}
+.ref-doc-btn:hover {
+  background: rgba(16,185,129,0.18);
+  color: #a7f3d0;
+  transform: translateX(2px);
+}
+.ref-doc-icon {
+  flex-shrink: 0;
+  font-size: 0.9em;
+}
+.ref-doc-arrow {
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  font-size: 0.85em;
+}
+.ref-doc-btn:hover .ref-doc-arrow {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* ═══════════════════════════════════════
+   Document Viewer Modal
+   ═══════════════════════════════════════ */
+.doc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  animation: docOverlayIn 0.2s ease;
+}
+@keyframes docOverlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.doc-modal {
+  width: 90vw;
+  max-width: 960px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #0f1729;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+  overflow: hidden;
+  animation: docModalIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes docModalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.doc-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: rgba(15, 23, 42, 0.95);
+  flex-shrink: 0;
+}
+.doc-modal-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.doc-modal-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #34d399;
+}
+.doc-modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.doc-modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.doc-modal-close:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+
+.doc-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 32px;
+}
+
+/* Loading spinner */
+.doc-modal-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+.doc-loading-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(52,211,153,0.15);
+  border-top-color: #34d399;
+  border-radius: 50%;
+  animation: docSpin 0.8s linear infinite;
+}
+@keyframes docSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Document content styling (HTML from luatvietnam.vn) */
+.doc-content {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+.doc-content p {
+  margin-bottom: 0.7em;
+}
+.doc-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.doc-content td,
+.doc-content th {
+  padding: 8px 12px;
+  vertical-align: top;
+}
+.doc-content b,
+.doc-content strong {
+  color: #fff;
+  font-weight: 600;
+}
+.doc-content em {
+  color: #cbd5e1;
+}
+.doc-content a {
+  color: #93c5fd;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.doc-content a:hover {
+  color: #bfdbfe;
+}
+.doc-content .mab2 {
+  margin-bottom: 4px;
+}
+.doc-content .docitem-8,
+.doc-content .docitem-9 {
+  margin-bottom: 20px;
+}
+.doc-content .docitem-13 {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.doc-content .doclink {
+  color: #6ee7b7;
+  font-weight: 500;
+}
+.doc-content .doclink:hover {
+  color: #a7f3d0;
+}
 
 /* ═══════════════════════════════════════
    Input Area
@@ -1125,4 +1350,77 @@
 /* Mobile Backdrop */
 [data-theme="light"] .mobile-backdrop {
   background: rgba(0,0,0,0.3);
+}
+
+/* Reference Document Button */
+[data-theme="light"] .ref-doc-btn {
+  background: rgba(5, 150, 105, 0.06);
+  color: #047857;
+}
+[data-theme="light"] .ref-doc-btn:hover {
+  background: rgba(5, 150, 105, 0.14);
+  color: #065f46;
+}
+[data-theme="light"] .msg-ref-tag.clickable:hover {
+  background: rgba(5, 150, 105, 0.12);
+  border-color: rgba(5, 150, 105, 0.3);
+}
+
+/* Document Modal - Light Mode */
+[data-theme="light"] .doc-modal {
+  background: #ffffff;
+  border-color: #d0d7de;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+[data-theme="light"] .doc-modal-header {
+  background: #f8fafc;
+  border-bottom-color: #d0d7de;
+}
+[data-theme="light"] .doc-modal-badge {
+  color: #047857;
+}
+[data-theme="light"] .doc-modal-title {
+  color: #1a202c;
+}
+[data-theme="light"] .doc-modal-close {
+  border-color: #d0d7de;
+  background: rgba(0,0,0,0.03);
+  color: #4a5568;
+}
+[data-theme="light"] .doc-modal-close:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
+  color: #dc2626;
+}
+[data-theme="light"] .doc-modal-loading {
+  color: #718096;
+}
+[data-theme="light"] .doc-loading-spinner {
+  border-color: rgba(5, 150, 105, 0.15);
+  border-top-color: #059669;
+}
+[data-theme="light"] .doc-content {
+  color: #1a202c;
+}
+[data-theme="light"] .doc-content b,
+[data-theme="light"] .doc-content strong {
+  color: #1a202c;
+}
+[data-theme="light"] .doc-content em {
+  color: #4a5568;
+}
+[data-theme="light"] .doc-content a {
+  color: #2563eb;
+}
+[data-theme="light"] .doc-content a:hover {
+  color: #1d4ed8;
+}
+[data-theme="light"] .doc-content .doclink {
+  color: #047857;
+}
+[data-theme="light"] .doc-content .doclink:hover {
+  color: #065f46;
+}
+[data-theme="light"] .doc-content .docitem-13 {
+  border-bottom-color: #e2e8f0;
 }
